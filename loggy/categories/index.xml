@@ -1,0 +1,93 @@
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+ <channel>
+   <title>Categories on Yoichi Hirai&#39;s Log</title>
+   <link>https://yoichihirai.com/loggy/categories/</link>
+   <description>Recent content in Categories on Yoichi Hirai&#39;s Log</description>
+   <generator>Hugo -- gohugo.io</generator>
+   <language>en-us</language>
+   <copyright>Copyright &amp;copy; 2019 - Yoichi Hirai</copyright>
+   
+       <atom:link href="https://yoichihirai.com/loggy/categories/index.xml" rel="self" type="application/rss+xml" />
+   
+   
+     <item>
+       <title>Picking an  Activity</title>
+       <link>https://yoichihirai.com/loggy/posts/pick-activity/</link>
+       <pubDate>Thu, 19 Dec 2019 08:57:22 +0100</pubDate>
+       
+       <guid>https://yoichihirai.com/loggy/posts/pick-activity/</guid>
+       <description>&lt;p&gt;I have several options to spend 5 minutes. I&#39;ve tried those options and I&#39;ve recorded whether each trial was good or bad.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; activities = [
+  { &amp;quot;name&amp;quot;: &amp;quot;duolingo&amp;quot;, &amp;quot;good&amp;quot;: 7, &amp;quot;bad&amp;quot;: 5 },
+  { &amp;quot;name&amp;quot;: &amp;quot;topics in algebra&amp;quot;, &amp;quot;good&amp;quot;: 10, &amp;quot;bad&amp;quot;: 2 },
+  { &amp;quot;name&amp;quot;: &amp;quot;byzantine history&amp;quot;, &amp;quot;good&amp;quot;: 10, &amp;quot;bad&amp;quot;: 3 },
+  { &amp;quot;name&amp;quot;: &amp;quot;journaling&amp;quot;, &amp;quot;good&amp;quot;: 16, &amp;quot;bad&amp;quot;: 2 },
+  { &amp;quot;name&amp;quot;: &amp;quot;kahn academy&amp;quot;, &amp;quot;good&amp;quot;: 8, &amp;quot;bad&amp;quot;: 5 }
+]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Here I&#39;m assuming that each activity is a Bernoulli, and their parameters follow Beta distribution of a particular form \(\Beta(g + 1, b + 1)\), where \(g\) and \(b\) denotes the numbers of good and bad experiences.&lt;/p&gt;
+&lt;p&gt;For each activity, I can pick a parameter randomly from the Beta distribution.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; def pick_param(activity):
+  return beta.rvs(activity[&amp;quot;good&amp;quot;] + 1, activity[&amp;quot;bad&amp;quot;] + 1)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Given a list of activities, I can draw such parameters and pick the best one.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; def pick_activity(activities):
+  params = map(pick_param, activities)
+  pairs = zip(params, activities)
+  pairs.sort(key=lambda pair: pair[0])
+  return pairs[-1][1][&amp;quot;name&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;With this, I can pick an activity&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; from scipy.stats import beta
+&amp;gt;&amp;gt;&amp;gt; pick_activity(activities)
+&amp;quot;kahn academy&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;</description>
+     </item>
+   
+     <item>
+       <title>Picking a value from Beta Distribution</title>
+       <link>https://yoichihirai.com/loggy/posts/beta-distr/</link>
+       <pubDate>Mon, 16 Dec 2019 19:37:48 +0100</pubDate>
+       
+       <guid>https://yoichihirai.com/loggy/posts/beta-distr/</guid>
+       <description>&lt;p&gt;Now I want to pick a random sample from a beta distribution.&lt;/p&gt;
+&lt;p&gt;Before talking about beta distribution, it&#39;s a good idea to make sure that I can write LaTeX equations. How does it work? I search for &amp;ldquo;Hugo latex&amp;rdquo;. &lt;a href=&#34;https://eankeen.github.io/blog/posts/render-latex-with-katex-in-hugo-blog/&#34;&gt;This one&lt;/a&gt; looks promising. So I do that. And I should see a nice \(\Beta(\alpha, \beta)\)$ here. I did this, and already 30 minutes have passed (the linked post had a small mistake in the code).&lt;/p&gt;
+&lt;p&gt;I &lt;a href=&#34;https://yoichihirai.com/loggy/posts/my-first-post/&#34;&gt;wanted to organize my life somehow&lt;/a&gt;. I&#39;m thinking about an app &amp;ldquo;Your 40 minutes&amp;rdquo;. I could list many kinds of activities that take 40 minutes. The app chooses one of them (in a reasonable way), and start ticking for 40 minutes. After the 40 minutes the app asks me, whether it was good or bad, or I didn&#39;t actually do it.&lt;/p&gt;
+&lt;p&gt;I chose to model each activity as a biased coin flip. I cut corners and just think the bias of the coin follows Beta distribution. I cut corners even more, and say, after \(m\) good trials and \(n\) bad trials, the bias follows a \(\Beta(n+1, m+1)\) distribution.&lt;/p&gt;
+&lt;p&gt;What do I do with these distributions? I can get a bias number randomly.
+From \(\Beta(1,1)\) distribution, I get a real number between 0 and 1 uniformly. On another Beta distribution, I get more skewed results. On each activity I pick the lottery and get the bias number. And then, the app is going to present the activity with the highest bias number.&lt;/p&gt;
+&lt;p&gt;It&#39;s possible that any of the activity is chosen, but an activity with better track records is more likely chosen. There is also some beginner&#39;s luck involved.&lt;/p&gt;
+&lt;p&gt;I can start with an interface first and fill in the functionality, but I don&#39;t. I just want to make sure that the calculation works. I want to make sure that I can pick samples from \(\Beta(\alpha, \beta)\) distributions.&lt;/p&gt;
+&lt;p&gt;I install &lt;a href=&#34;https://www.scipy.org/install.html#distributions&#34;&gt;SciPy&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;❯ python -m pip install --user numpy scipy matplotlib ipython jupyter pandas sympy nosew
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;And then, it&#39;s easy to generate random numbers:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;python
+&amp;gt;&amp;gt;&amp;gt; from scipy.stats import beta
+&amp;gt;&amp;gt;&amp;gt; beta.rvs(2,3)
+0.5206578473982338
+&amp;gt;&amp;gt;&amp;gt; beta.rvs(2,3)
+0.1411848825884534
+&amp;gt;&amp;gt;&amp;gt; beta.rvs(2,3)
+0.35268037095303756
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Next, I&#39;ll play with a real example on the Python console.&lt;/p&gt;
+</description>
+     </item>
+   
+     <item>
+       <title>Life Organization</title>
+       <link>https://yoichihirai.com/loggy/posts/my-first-post/</link>
+       <pubDate>Tue, 03 Dec 2019 16:36:31 +0100</pubDate>
+       
+       <guid>https://yoichihirai.com/loggy/posts/my-first-post/</guid>
+       <description>&lt;p&gt;I don&#39;t know the title of this post.&lt;/p&gt;
+&lt;p&gt;Suddenly I have time. I need to structure my life again. I was clever enough to book an intensive German course before suspending my work, so my life has some structure. That&#39;s a temporary solution. The course ends this week.&lt;/p&gt;
+&lt;p&gt;I dig around. When something makes more sense, I dig deeper. I also don&#39;t want to miss other possibilities. So I&#39;m facing some exploration vs exploitation problem. I heard there are bunch of algorithms like UCB1.&lt;/p&gt;
+&lt;p&gt;I can make a special software for managing my life based on UCB1. There is going to be a list of activities, each taking 40 minutes. After each try, I say it was good or bad. The software chooses the next activity, trying to hit the balance between having good time (exploitation) and trying newer activities (exploration).&lt;/p&gt;
+&lt;p&gt;I&#39;m not sure about one thing. Is UCB1 a good algorithm in my use case? I&#39;d be adding more and more activities while I&#39;m figuring things out. I&#39;d be reading new codebase, so I&#39;d be adding another entry in the list. If I add more and more activities on the go, I might be spending all the time on the newer additions. That&#39;s not good. To be honest, I tried organizing my life according to UCB1 a while ago, and I had precisely this problem.&lt;/p&gt;
+&lt;p&gt;In that case, perhaps &amp;ldquo;randomized probability matching&amp;rdquo; might feel fairer.
+Assuming each activity is a Bernoulli distribution, how can I learn the parameters? &lt;a href=&#34;https://www.projectrhea.org/rhea/index.php/Bayes_Parameter_Estimation_with_examples#Bayesian_Parameter_Estimation:_Bernoulli_Case_with_Beta_distribution_as_prior&#34;&gt;It looks like it&#39;s doable, assuming that the parameter follows Beta distribution&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In the next post, I&#39;ll find a convenient implementation of this parameter estimation. I&#39;d be surprized if there is none.&lt;/p&gt;
+&lt;p&gt;The title of this post is &amp;ldquo;life organization.&amp;rdquo;&lt;/p&gt;
+</description>
+     </item>
+   
+ </channel>
+</rss>

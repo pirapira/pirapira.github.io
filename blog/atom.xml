@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[Notes]]></title>
+  
+  <link href="/blog/atom.xml" rel="self"/>
+  <link href="https://yoichihirai.com/blog/"/>
+  <updated>2016-10-09T21:07:21.377Z</updated>
+  <id>https://yoichihirai.com/blog/</id>
+  
+  <author>
+    <name><![CDATA[Yoichi Hirai]]></name>
+    <email><![CDATA[i@yoichihirai.com]]></email>
+  </author>
+  
+  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[ブロックチェインはなにかすごいのか]]></title>
+    <link href="https://yoichihirai.com/blog/blockchain/"/>
+    <id>https://yoichihirai.com/blog/blockchain/</id>
+    <published>2016-10-09T20:05:18.000Z</published>
+    <updated>2016-10-09T21:04:45.000Z</updated>
+    <content type="html"><![CDATA[<p>この記事のタイトルをよく見ると、「なにが」ではなく「なにか」と書いてある。ブロックチェインがすごいのかすごくないのかよくわからないからだ。君はEthereum Foundationで働いているのではないかと聞かれると、はいそのとおりですと答えるのだが、ブロックチェインはなにがすごいのかと聞かれると、なにかすごいのかしらんと考え込んでしまう。</p>
+<p>こっそり思うブロックチェインの一番の功績は公開鍵暗号の利用者を増やしたことである。電子メールにせよwebページにせよ、つけようとおもえば公開鍵暗号をつかえるのだが、つかおうと思わなければつかわないで済む。いっぽうブロックチェインにはアカウントの秘密を保持する機能がないので、自分の秘密鍵は自分で管理するのが当然の開拓時代である。これは、ブロックチェインがすごくないから起こることで、秘密を管理する機能がないところで価値を扱おうとするから利用者にしわ寄せが行っているだけで、まあ怪我の功名と言えるだろう。</p>
+<p>そういえば、ブロックチェインで合意が取れるという話について、昔からある研究に照らして何か言えるか考えてみた。</p>
+<p>分散アルゴリズムの研究では、ビザンチン故障(すぐせつめいします)するノードがいくつまでなら、まだ動きますよ、というような定理を証明していくことが多い。ビザンチン故障したノードは何をするか何をしないかわからないノードということで、意味不明なデータを送りつけるかもしれないし、黙り込むかもしれないし、意味ありげだけなデータを送ってきてだましてくるかもしれないし、ふつうにしばらく動いているかもしれないし、とにかくなにをするかわからない。よいアルゴリズムを使うと、このような胡乱な参加者がたくさんいても、そうでない参加者同士でアルゴリズムを動かし続けられる。たとえばビットコインとかEthereumとかでビザンチン故障の参加者がいると何が起きるかというと、よい性質がすべて失われる。ビットコインでもEthereumでも、超絶的に運のいいビザンチン故障ノードが人のアドレスから秘密鍵をずばずば当てたり、proof of workの課題を他人の億兆倍のスピードで解いたりしはじめると、全体的に崩壊して素のインターネットよりよいところがなにかあったのか、わからなくなってしまう。これは極端な議論なのだが、ビザンチン故障に耐えるというのは、そういう超絶幸運参加者がいても壊れないということなので、しかたがない。</p>
+<p>それではといって、これらのビザンチン故障のノードは実は確率多項式チューリングマシンで、これこれの計算は安くなくて、うんぬん、と、暗号の議論をするときに使うような仮定を置いていけば、暗号の議論でよくある結論の、セキュリティパラメータの増加につれてそのどんな多項式よりも早く攻撃が難しくなっていくので、これはいい方式なんですという議論ができるだろうか。できないとおもう。ビットコインにしてもEthereumにしても、たくさんお金を出してproof of workの課題を人より速く解けば、昔の支払いをなかったことにさせたりとか、いやな攻撃ができる。この「たくさんお金を出して」という障壁を、秘密鍵の長さにつれてどんな多項式よりも素早く引き上げていくというのは、できない話である。世界の富の半分以上がそのブロックチェインを支えているというふうになれば安全かもしれないが、それはディストピアだと思われる。</p>
+<p>それから分散データベースとしてどうなんですかというと全然だめである。なにしろすべての参加者がすべての歴史を持つので、一台の計算機より速くなるということがない。そもそもすべての歴史に全順序をつけて一列に並べようというのがなんだか無駄な感じがして、個々のアカウントのすることについて全順序がつけばそれで十分なのではないの、と思ってしまう。全順序をつけるつけかたにしても、原子時計でタイムスタンプをつけたほうが、性能はでそう。このへんをもうちょっとましにする計画はあるが、分散データベースとして開発された分散データベースに性能が及ぶことはあるまい。</p>
+<p>ブロックチェインはなにかすごいのか。たぶん、おたがい信用しないノードがたくさん集まって、ちゃんとprice of anarchyを払って一つの歴史を編んでいくのが、これまでになかったことで、おもしろい眺めなのだろう。そしてそのうち、ブロックチェインの側が地球を眺めていることになるんじゃないかしら、と思わせるようなところがある。既の僕のまわりでは変わったブロックが現れるたびに人が働いているので、ブロックチェインの側の都合で人間が動いている。</p>
+<p>ともかく、人が使い始めていて、Ethereumのスマートコントラクトが走る仮想マシンはごく単純なもので、形式手法のよいターゲットとなっている。自分にとってはそれで十分である。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>この記事のタイトルをよく見ると、「なにが」ではなく「なにか」と書いてある。ブロックチェインがすごいのかすごくないのかよくわからないからだ。君はEthereum Foundationで働いているのではないかと聞かれると、はいそのとおりですと答えるのだが、ブロックチェインはなに]]>
+    </summary>
+    
+      <category term="technology" scheme="https://yoichihirai.com/blog/tags/technology/"/>
+    
+      <category term="ethereum" scheme="https://yoichihirai.com/blog/tags/ethereum/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[ETHDEV Berlinに遊びに行った]]></title>
+    <link href="https://yoichihirai.com/blog/ethdev/"/>
+    <id>https://yoichihirai.com/blog/ethdev/</id>
+    <published>2015-10-31T08:26:42.000Z</published>
+    <updated>2015-10-31T08:37:56.000Z</updated>
+    <content type="html"><![CDATA[<p>ふとETHDEV Berlinに遊びに行ってみた。</p>
+<ul>
+<li>上階の空手道場の振動で、部屋の照明が揺れていた。</li>
+<li>突然の来客、Ethereumってどうすれば買えるんですか、と切り出して、質問重々、お茶を飲んで帰って行った。</li>
+<li>みんな黙々コードを書いていた。</li>
+<li>Why3+Z3を試している人がいて、なんでこんな簡単な事後条件を判ってくれないんだと嘆いていた。</li>
+<li>git fix-upという技を教えてもらった。git blameしてからgit rebase -i、というgit史改変を簡便にできるらしい。</li>
+<li>Berlinにはemacs meetupがあるらしい。よいなあ。</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>ふとETHDEV Berlinに遊びに行ってみた。</p>
+<ul>
+<li>上階の空手道場の振動で、部屋の照明が揺れていた。</li>
+<li>突然の来客、Ethereumってどうすれば買えるんですか、と切り出して、質問重々、お茶を飲んで帰って行った。</li>
+<li>]]>
+    </summary>
+    
+      <category term="ethereum" scheme="https://yoichihirai.com/blog/tags/ethereum/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[枠]]></title>
+    <link href="https://yoichihirai.com/blog/d/"/>
+    <id>https://yoichihirai.com/blog/d/</id>
+    <published>2015-09-20T21:00:00.000Z</published>
+    <updated>2015-09-21T18:26:20.000Z</updated>
+    <content type="html"><![CDATA[<p>目標を決めてそれに向かって進むのが嫌いだ。たぶん目標を言葉にしてその題目に自己投企するのが嫌なのだろう。巨視的な道筋を決めてそれに沿って進むより、微視的に意義ありげなことをずっとしているほうが好きである。それでは大事は成し遂げられないというかもしれないが、大事には興味がない。</p>
+<p>ただ、微視的に目先をほじくり返していては、ひとつも形が現れないおそれがある。そこで枠を切る。切った枠の中を散漫にでもずっと掘り返していれば、枠の中のどこかは深く掘り返されて、暖かみさえ帯びるだろう。</p>
+<p>この枠の形が人にとってわかりやすいとそれは専門と呼ばれるが、世界には地脈が巡っているので、人には関連がわからない飛び地をいくつも持つこともできる。枠の切り方は人にはわからないほうがたのしいかもしれない。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>目標を決めてそれに向かって進むのが嫌いだ。たぶん目標を言葉にしてその題目に自己投企するのが嫌なのだろう。巨視的な道筋を決めてそれに沿って進むより、微視的に意義ありげなことをずっとしているほうが好きである。それでは大事は成し遂げられないというかもしれないが、大事には興味がない]]>
+    </summary>
+    
+      <category term="life" scheme="https://yoichihirai.com/blog/tags/life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[このごろのよみもの(2015年5月)]]></title>
+    <link href="https://yoichihirai.com/blog/reading201505/"/>
+    <id>https://yoichihirai.com/blog/reading201505/</id>
+    <published>2015-05-17T19:46:50.000Z</published>
+    <updated>2015-05-17T20:25:26.000Z</updated>
+    <content type="html"><![CDATA[<p>このまえ日本で買った本を読み終えたわけでもないのに、別のものばかり読んでいる。</p>
+<ul>
+<li>中野幸一編<a href="http://www.musashinoshoin.co.jp/shoseki/view/827/%E5%A4%89%E4%BD%93%E4%BB%AE%E5%90%8D%E3%81%AE%E6%89%8B%E5%BC%95%E3%80%94%E6%94%B9%E8%A8%82%E5%A2%97%E8%A3%9C%E3%80%95/4" target="_blank" rel="external">「変体仮名の手引」</a>。「つ、つ、つ、つ、つ」とか言いながら、たくさんの「つ」の書き方をみている。頭を冷やすのによい。あと良寛の字がかっこいい。</li>
+<li>Andrew Kennedyら “Coq: The world’s best macro assembler?”の<a href="http://research.microsoft.com/en-us/um/people/akenn/coq/PPDP/index.html" target="_blank" rel="external">Coqのソース</a> これは読み始めたばかり。おもしろい。</li>
+<li>bitcoindの<a href="https://github.com/bitcoin/bitcoin" target="_blank" rel="external">ソース</a> ちょっと気になったので、ぼんやり眺めている。わりと荒っぽい感じがする。</li>
+<li>Marco Poloの、<a href="http://shop.dumontreise.de/marco-polo/amsterdam-marco-polo-reisefuehrer-ebook-epub-europa_pid_880_58435.html" target="_blank" rel="external">ドイツ語で書いてあるアムステルダムの案内書</a> 辞書を引き引き読んでいる。やっと分離動詞を見切れるようになってきた。住んだことがある場所なので、辞書を引いたらだいたい現実と対照がつくのが楽。</li>
+</ul>
+<p>他に7冊か8冊、休眠状態のがあるけれども、あまり気にしない。</p>
+<p>ところで、読んでいて頭を使うものがあまりないので、なにか仕入れようということで、刹那的瞬発力のために確率論パズルみたいのを、もうちょっと息の長い演繹を追うためにGeneral Topologyの教科書を、それぞれ買った。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>このまえ日本で買った本を読み終えたわけでもないのに、別のものばかり読んでいる。</p>
+<ul>
+<li>中野幸一編<a href="http://www.musashinoshoin.co.jp/shoseki/view/827/%E5%A4%89%E4%BD%93%E4]]>
+    </summary>
+    
+      <category term="book" scheme="https://yoichihirai.com/blog/tags/book/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[ドイツで休日・夜間に開いている薬局をみつける]]></title>
+    <link href="https://yoichihirai.com/blog/apotheken/"/>
+    <id>https://yoichihirai.com/blog/apotheken/</id>
+    <published>2015-04-04T20:59:58.000Z</published>
+    <updated>2015-04-04T21:02:04.000Z</updated>
+    <content type="html"><![CDATA[<p>ドイツでは休日や夜間にも輪番で薬局が開いていて、たとえば<a href="http://www.apotheken.de/" target="_blank" rel="external">Apotheken.de</a>というサイトで検索できる。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>ドイツでは休日や夜間にも輪番で薬局が開いていて、たとえば<a href="http://www.apotheken.de/" target="_blank" rel="external">Apotheken.de</a>というサイトで検索できる。</p>
+]]>
+    </summary>
+    
+      <category term="life" scheme="https://yoichihirai.com/blog/tags/life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[311]]></title>
+    <link href="https://yoichihirai.com/blog/311/"/>
+    <id>https://yoichihirai.com/blog/311/</id>
+    <published>2015-01-11T22:23:59.000Z</published>
+    <updated>2015-01-11T22:31:41.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="2011年3月11日">2011年3月11日</h2>
+<p>北海道の定山渓というところでPPLという学会が終わって、新千歳空港でそろそろ手荷物検査を受けようかというところで揺れを感じ、なにか落ちてこないかと天井を見上げていた。新千歳空港のテレビで、津波の映像を見た。羽田行きの飛行機は遅れたが飛んだ。</p>
+<p>羽田空港、出られなくなった人々で混雑。コンビニの前に警官がいて入店制限をしていた。自分は歩いて外に出ることにした。天空橋を渡って鎌田に向かう途中のコンビニで、おにぎりやパンや弁当など食事になりそうなもの一切が売り切れていたが、アイスクリームはたくさん残っていたので、それを二つ買って、食べながら鎌田のほうへ歩きつづけた。居酒屋やラーメン屋が営業していて、そこで夜を過ごそうかとも思ったが、鎌田駅まであるいてみた。途中、都心から来て多摩川を渡ろうとする行進に出会った。東急鎌田から列車が動くというので、乗ってみたら、乗り継いで実家の近くまで行けたので、歩いて帰った。</p>
+<p>2011年3月</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="2011年3月11日">2011年3月11日</h2>
+<p>北海道の定山渓というところでPPLという学会が終わって、新千歳空港でそろそろ手荷物検査を受けようかというところで揺れを感じ、なにか落ちてこないかと天井を見上げていた。新千歳空港のテレビで、津波の映像を見]]>
+    </summary>
+    
+      <category term="life" scheme="https://yoichihirai.com/blog/tags/life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[プラハで食べたもの]]></title>
+    <link href="https://yoichihirai.com/blog/prague/"/>
+    <id>https://yoichihirai.com/blog/prague/</id>
+    <published>2015-01-01T19:33:57.000Z</published>
+    <updated>2015-01-01T20:07:24.000Z</updated>
+    <content type="html"><![CDATA[<p>プラハで食べたもの</p>
+<ul>
+<li><p>Wine sausageという、柔弱なソーセージを食べた。ぐるぐる渦を巻いて楊枝で止められていた。ふにゃふにゃしていて、おいしかった。</p>
+</li>
+<li><p>トマトスープを食べた。クリームたっぷりで、おいしかった。</p>
+</li>
+<li><p>ニョッキを食べた。ニンニクが効いて、おいしかった。</p>
+</li>
+<li><p>豚スネ肉の煮込みを食べた。学校給食みたいな器で出てきた。脂身が健康に悪そうだった(私は脂肪が余っている)が、おいしかった。</p>
+</li>
+<li><p>鴨のconfitを食べた。一緒に出てきた、じゃが芋の餅みたいなものが、おいしかった。</p>
+</li>
+<li><p>麻婆豆腐を食べた。山椒が効いて、おいしかった。</p>
+</li>
+<li><p>Tom’s burgerというのを食べた。たれの味と卵と肉が調和して、おいしかった。</p>
+</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>プラハで食べたもの</p>
+<ul>
+<li><p>Wine sausageという、柔弱なソーセージを食べた。ぐるぐる渦を巻いて楊枝で止められていた。ふにゃふにゃしていて、おいしかった。</p>
+</li>
+<li><p>トマトスープを食べた。クリームたっぷりで、おいしかっ]]>
+    </summary>
+    
+      <category term="travel" scheme="https://yoichihirai.com/blog/tags/travel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[ドイツで働く話]]></title>
+    <link href="https://yoichihirai.com/blog/gg/"/>
+    <id>https://yoichihirai.com/blog/gg/</id>
+    <published>2014-12-10T21:08:37.000Z</published>
+    <updated>2014-12-10T21:52:21.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="http://www.adventar.org/calendars/596" target="_blank" rel="external">海外で働くエンジニア（or Webの人） Advent Calendar 2014</a>の12月11日分の記事です。半年ほど前から、ドイツのドレスデンという街で、アメリカに本社がある会社に勤めています。</p>
+<p>数日前の<a href="http://shrkw.hatenablog.com/entry/comparison_tokyo_boston" target="_blank" rel="external">東京とボストン（シアトル含む）の比較</a>をみて、アメリカとヨーロッパはだいぶ違うのだなあ、とおもったので、そのあたりのことを書いてみましょう。</p>
+<h2 id="医療費">医療費</h2>
+<p>このまえ、歯のつめものがとれたので歯医者に行ったら、詰め物をしてくれました。健康保険証を見せただけで、支払いをしないですみました(ただし、詰め物の色を白にしたい場合は、追加の支払いが必要だったようです)。大学の学費も無料だそうです。</p>
+<h2 id="ビザ">ビザ</h2>
+<p><a href="http://www.bluecard-eu.de/eu-blue-card-germany/" target="_blank" rel="external">EU Blue Card</a>という制度があって、IT-skilled workerで年収がいくらか以上の雇用契約がある人には、ビザがおりるようです。ビザの抽選はきいたことがありません。</p>
+<h2 id="チップ">チップ</h2>
+<p>チップは払ってもよいが、べつに特別なことをしてもらったわけではない場合にチップを払わないのは普通のことのようです。</p>
+<h2 id="公共交通機関">公共交通機関</h2>
+<p>ドレスデン限定のことですが、路面電車が充実しています。自分は家から職場まで歩いています。</p>
+<h2 id="職場の構造">職場の構造</h2>
+<p>自分のところはオープンオフィスですが、ふつうは三人一部屋くらいの小さい部屋らしいです。</p>
+<h2 id="時間の使い方">時間の使い方</h2>
+<p>みんな、ちゃんと帰ります。同じ会社に、自宅で働いている人もけっこういます。インターネットごしに会議できてしまいます。ときどき顔は合わせます。</p>
+<h2 id="喫煙者">喫煙者</h2>
+<p>喫煙者はたいへん多いです。タバコの吸殻が大量にちらばっているところがあります。</p>
+<h2 id="労働市場">労働市場</h2>
+<p>労働市場の需給がどうなっているのか、いまいちよくわかっていません。自分は、特殊技能をもって入りこんだので、あまり参考にならないでしょう。ベルリンには起業している人がたくさんいるようですが、まだ、その界隈に出掛けていません。</p>
+<h2 id="ドイツ語">ドイツ語</h2>
+<p>仕事は英語でも、ドイツ語が話せないと困る場面がいろいろあります。勉強しながら、ややこしいことが起きないように慎重に暮らしています。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="http://www.adventar.org/calendars/596" target="_blank" rel="external">海外で働くエンジニア（or Webの人） Advent Calendar 2014</a>の12月11日分の記事です]]>
+    </summary>
+    
+      <category term="life" scheme="https://yoichihirai.com/blog/tags/life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[このごろのよみもの(2014年11月)]]></title>
+    <link href="https://yoichihirai.com/blog/readings-11-2014/"/>
+    <id>https://yoichihirai.com/blog/readings-11-2014/</id>
+    <published>2014-11-30T20:42:06.000Z</published>
+    <updated>2014-11-30T20:42:06.000Z</updated>
+    <content type="html"><![CDATA[<p>このまえ日本に帰って本屋をうろついた。いくつか読み始めた。</p>
+<ul>
+<li><a href="http://www.iwanami.co.jp/cgi-bin/isearch?isbn=ISBN4-00-320391-7" target="_blank" rel="external">飯倉照平『中国民話集』</a>登場人物がすぐ死ぬ(日本の民話もそうかもしれない)。</li>
+<li><a href="http://www.nippyo.co.jp/book/6638.html" target="_blank" rel="external">神取道宏『ミクロ経済学の力』</a>。著者をいちどだけ見たことがあって、どういう人だったのだろうと思って、読んでみた。たいへん親切な本。この本の補論Dというところをみて、おもいだしたのは、一度、休みを取って東大の図書館に行ってKoopmans, “Three Essays on the State of Economic Science”のはじめのほうを読んだ。そこで、価格は情報の節約だというせりふをみたのだった。</li>
+<li><a href="http://www.saiensu.co.jp/?page=book_details&amp;ISBN=ISBNsgc-35" target="_blank" rel="external">竹内啓『賭けの数理と金融工学』</a>もとになったShaferとVovkの本は長くて大変だなあとおもっていたので、助かった。5章の有利な賭けのところをみて、そりゃそうだなとおもって、なにがしかの具体例を計算してみたけれども、ちょっとした確率分布の変化にだいぶ敏感に戦略が変わってしまうので(というか手持ちの情報がどういう確率分布をもたらすのかあまりよくわかっていないので)あった。このへんの話の登場人物を多くしていくと何が起きるかは、ちょっと気になる。</li>
+<li>宇治拾遺。最初の話をよみおえて、翁は誰だったのだろうとか言っていて、題を見ると誰だったのかわかるなどする。</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>このまえ日本に帰って本屋をうろついた。いくつか読み始めた。</p>
+<ul>
+<li><a href="http://www.iwanami.co.jp/cgi-bin/isearch?isbn=ISBN4-00-320391-7" target="_blank" rel=]]>
+    </summary>
+    
+      <category term="book" scheme="https://yoichihirai.com/blog/tags/book/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Slaughterhouse-Five]]></title>
+    <link href="https://yoichihirai.com/blog/sl5/"/>
+    <id>https://yoichihirai.com/blog/sl5/</id>
+    <published>2014-11-06T21:05:08.000Z</published>
+    <updated>2014-11-06T21:05:08.000Z</updated>
+    <content type="html"><![CDATA[<p>Kurt Vonnegutの<a href="http://www.klett.de/produkt/isbn/978-3-12-579892-2" target="_blank" rel="external">Slaughterhouse-Five</a>を読んだ。ドレスデンの小説だと<a href="https://twitter.com/kiyototamura/status/496154579763871745" target="_blank" rel="external">教えてもらった</a>のがきっかけだ。読んでみたら、文脈がころころ行ったり来たりして、CPUになったような気持ちがする小説だった。第二次大戦末期のドイツと、ベトナム戦争の頃のアメリカと、UFOで連れ去られた他の惑星と、記述が行ったり来たりする。主人公は時間を行ったり来たりするので、ときどき映画を逆回しに見てしまって、燃えさかる市街から炎を飛行機が回収して、飛行機は後ろ向きにアメリカまで飛んでいき、危険物は工場で分解されて、石油は地面に戻される、というようなことになる。しかし、UFOや時間跳躍は日常めいて、第二次大戦末期のほうが、よほど現実離れしている。貨車に捕虜を積んで何日も運んでいると、貨車全体が生き物のようになって、食べ物が入って排泄物とうめき声が出てくる。爆撃の跡は月面で、鳥の声がプーチーイー、である。</p>
+<p>ドレスデンの地理的描写はあまり出てこないのだが、そろそろドレスデンに半年も住んでいるので、ちょっとしたことで、どのへんの話だか見当がついてしまう。かぱこぽと馬車が進んでいたのは、我が家の前の道ではなかろうか。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Kurt Vonnegutの<a href="http://www.klett.de/produkt/isbn/978-3-12-579892-2" target="_blank" rel="external">Slaughterhouse-Five</a>を読んだ。ドレス]]>
+    </summary>
+    
+      <category term="book" scheme="https://yoichihirai.com/blog/tags/book/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Ukraine Diaries]]></title>
+    <link href="https://yoichihirai.com/blog/ud/"/>
+    <id>https://yoichihirai.com/blog/ud/</id>
+    <published>2014-10-26T11:34:51.000Z</published>
+    <updated>2014-10-26T11:34:51.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="http://www.randomhouse.co.uk/editions/ukrainian-diaries/9781846559471" target="_blank" rel="external">Andrey Kurkov “Ukraine Diaries”</a><br>を読んだ。切羽詰まったときに何が起きるのか読みためておくと、自分が切羽詰まったときに、すこしはましな動きを取れるであろう。</p>
+<ul>
+<li>デモの勢いを抑えるために、地下鉄が市内の駅をすべて通過するようになる。</li>
+<li>デモのあったときその広場に近寄った携帯電話すべてに、同じSMSが届く。</li>
+<li>Vodkaの値段が、ウクライナとロシアで違うので、クリミア半島には、Vodkaをウクライナの値段で買っておいてロシアの値段で売ろうとしたひとがたくさんいる。</li>
+</ul>
+<p>というような、さかしい行動ががたくさんでてきた。こういうことは、言われてみれば納得がいって、かしこいなあ、というくらいの話である。こういう、かしこいなあ、というくらいの話のよこに、少し間違えただけで、あるいは何も間違えていないのに、命を落とす人もたくさん出てくる。</p>
+<p>ところで、著者はヨーロッパべったりで、ヨーロッパに啓蒙してもらいたい、というようなことを書いている。ロシアには批判的だ。強国に挟まれて、どちらにつくかで国が二分されると、個々人も自分がどちら派か決めると楽なのだろうか。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="http://www.randomhouse.co.uk/editions/ukrainian-diaries/9781846559471" target="_blank" rel="external">Andrey Kurkov “Ukraine Dia]]>
+    </summary>
+    
+      <category term="book" scheme="https://yoichihirai.com/blog/tags/book/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[十全外人大庭亀夫]]></title>
+    <link href="https://yoichihirai.com/blog/auber/"/>
+    <id>https://yoichihirai.com/blog/auber/</id>
+    <published>2014-10-04T09:02:02.000Z</published>
+    <updated>2014-10-04T09:48:23.000Z</updated>
+    <content type="html"><![CDATA[<p>大庭亀夫は英国の人なり。号して十全外人といふ。幼時よりキュウリのサンドイッチを餐する身なれど、自力にて発明や投資やを以て億万の財を成す。料理、乗馬、格闘など多才尽し難し。</p>
+<p>日本語練習帳といふ文、率直自然に綴れば即ち中る。百千を知り一のみを書くやうなり。数多の人の苦楽を、直に聴き知れる人なるべし。富貴の極みを草頭の露と飲み下して浮遊する人なるべし。</p>
+<p>日本の記事多し。暗然たる未来を見通す。<br><a href="http://gamayauber1001.wordpress.com/2014/09/13/nomad17/" target="_blank" rel="external">http://gamayauber1001.wordpress.com/2014/09/13/nomad17/</a></p>
+<p>ときに生活の一端を覗かしむ。<br><a href="http://gamayauber1001.wordpress.com/2014/04/30/living-in-obscurity/" target="_blank" rel="external">http://gamayauber1001.wordpress.com/2014/04/30/living-in-obscurity/</a></p>
+<p>これらの文は日本語界の風穴なれば、驚き疑ひ誹る者あり。嘘と決むる者あり、偽外人と呼ぶ者あり。日本への警鐘を賢しらに聴く者あれど、日本人の為す所変はらず、解釈改憲は成り韓国人への罵倒は続く。遂に呆れ果て「日本語人なんて心から嫌いになった」と述ぶるに至れり。宜なり。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>大庭亀夫は英国の人なり。号して十全外人といふ。幼時よりキュウリのサンドイッチを餐する身なれど、自力にて発明や投資やを以て億万の財を成す。料理、乗馬、格闘など多才尽し難し。</p>
+<p>日本語練習帳といふ文、率直自然に綴れば即ち中る。百千を知り一のみを書くやうなり。数多の人]]>
+    </summary>
+    
+      <category term="people" scheme="https://yoichihirai.com/blog/tags/people/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[8さいのじぶんへ]]></title>
+    <link href="https://yoichihirai.com/blog/eight/"/>
+    <id>https://yoichihirai.com/blog/eight/</id>
+    <published>2014-08-14T20:37:27.000Z</published>
+    <updated>2016-10-09T21:05:26.000Z</updated>
+    <content type="html"><![CDATA[<p>きみは、わからないのがきらいだ。ひとにわかるのに、じぶんにわからないわけがない、そうおもって、しばらくがんばるといい。わからないときに、わかったふりをしては、いけない。わからないまま、うんうんいうとよい。しつもんできるとよい。そうしてくらすと、ものすごくかしこいひとに、あえる。すると、がんばらないとわからないことが、たくさんでてくる。たのしい。わからないことがたくさんでてくる。たのしい。</p>
+<p>きみは、れんしゅうがきらいだ。れんしゅうしないとうまくならないことが、きらいだ。どうしてうまくいかないのか、わからないのが、きにいらない。どうしてうまくいかないのかわからないのに、なんどもためすだけで、うまくいくのが、きにいらない。にんげんは、じぶんがどうしてなにができるか、あまりよくわからないようにできている。たくさんしっぱいするだけで、せつめいできなくても、しっぱいしなくなることがある。どうしてうまくいくのかわからなくて、ほんとうにうまくなんてしんじられなくても、やればすこしはうまくなる。</p>
+<p>あとは、たのしくしているのが、だいじだ。たのしいふりは、しなくていい。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>きみは、わからないのがきらいだ。ひとにわかるのに、じぶんにわからないわけがない、そうおもって、しばらくがんばるといい。わからないときに、わかったふりをしては、いけない。わからないまま、うんうんいうとよい。しつもんできるとよい。そうしてくらすと、ものすごくかしこいひとに、あえ]]>
+    </summary>
+    
+      <category term="life" scheme="https://yoichihirai.com/blog/tags/life/"/>
+    
+      <category term="retrospect" scheme="https://yoichihirai.com/blog/tags/retrospect/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[18才の自分へ]]></title>
+    <link href="https://yoichihirai.com/blog/eighteen/"/>
+    <id>https://yoichihirai.com/blog/eighteen/</id>
+    <published>2014-07-06T08:23:17.000Z</published>
+    <updated>2016-10-09T21:04:45.000Z</updated>
+    <content type="html"><![CDATA[<p>明日なにをしようか、考えていると思う。実をいうと、君が明日なにをするのかで、君が十年後になにをしているのか、だいぶ決まってしまう。こんなことを知ると、深刻になってかえって愚かな判断をすることもあるので、気にしないでもいいけれども。雲先生に楽しいことをすればいいと言われた通りだ。</p>
+<p>君は、わかってしまえば単純なような話が好きなので、米谷先生の量子論の講義を眺めてよくわからないと思い、アイシャムの本を見てよくわからないと思い、そのままにしてしまったけれども、真面目な物性物理の人になる気はないのか、一度よく考えてみるといい。真面目と言ったのは、計算機と比べての話で、だいたい、電気を食べて熱を出している箱の中にいると、何かが保存するという気もしないし、どこに原則を求めるのかで意見が一致することもない。</p>
+<p>君は、あるとき、立花隆事務所の本を運ぶ手伝いをして、書棚の夥しい昭和史の本を見て、北一輝とはどういう人であったのかなあと思ったが、そうしたら、その場でしゃがみこんででも、読んでみるとよかったと思う。</p>
+<p>ところで君は、あるとき高校の数学の教師に何をするのか聞かれて、「研究者になるのかなああ」とか言って窓の外を見て、「いや、研究者じゃなくてもいいんだけれども」なんて言われていた。君の「なるのかなああ」は長く尾を引くのだけれども、君はうすうす気付いていて、君は北の窓から小金井の方を見ていたつもりだったが、つくばに行くことになった。そのあと外国に行くことになるのは、知らなかったであろう。</p>
+<p>さて君は、USの大学には行かずに日本の大学に通っている。それで良かったのか悪かったのか、よくわからない。流行が激しい分野では、田舎で学問をやるのにも、思うままにじっくりやれるという長所がある。君はその後、ちょっとだけUSに行くけれど、極めて短期のお客さんだったので、どういうところなのか、あまり洞察が無い。もっと言うと、君は日本がどういうところであるのかについても、あまり洞察がなくて、おかげで土地をうつっても、どうにか暮らしてしまう。もちろん、初めて一人で出掛けた外国の、ダカールの空港を出て、炎天の下で途方に暮れることはあったが。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>明日なにをしようか、考えていると思う。実をいうと、君が明日なにをするのかで、君が十年後になにをしているのか、だいぶ決まってしまう。こんなことを知ると、深刻になってかえって愚かな判断をすることもあるので、気にしないでもいいけれども。雲先生に楽しいことをすればいいと言われた通り]]>
+    </summary>
+    
+      <category term="life" scheme="https://yoichihirai.com/blog/tags/life/"/>
+    
+      <category term="retrospect" scheme="https://yoichihirai.com/blog/tags/retrospect/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[test]]></title>
+    <link href="https://yoichihirai.com/blog/test/"/>
+    <id>https://yoichihirai.com/blog/test/</id>
+    <published>2014-06-22T10:32:20.000Z</published>
+    <updated>2014-06-22T10:34:29.000Z</updated>
+    <content type="html"><![CDATA[<p>testing the code highlighting</p>
+<pre><code>int <span class="function">f</span>(<span class="value">double</span> x) {
+  <span class="function">testing</span>();
+}
+</code></pre>]]></content>
+    <summary type="html">
+    <![CDATA[<p>testing the code highlighting</p>
+<pre><code>int <span class="function">f</span>(<span class="value">double</span> x) {
+  <span class="fu]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[ドイツ入国してから働き始めるまで]]></title>
+    <link href="https://yoichihirai.com/blog/enter_germany/"/>
+    <id>https://yoichihirai.com/blog/enter_germany/</id>
+    <published>2014-05-31T07:18:57.000Z</published>
+    <updated>2014-05-31T16:28:21.000Z</updated>
+    <content type="html"><![CDATA[<p>5月19日にドイツに入った。入国にあたって日本のパスポートを見せた。働くためにドイツに来たと伝えると、外人局に行かなくてはならないことを知っているか聞かれ、知っていると言ったら通してもらえた。税関で、赤の門に行って、持っている高い品の品名、買った場所、値段の一覧を見せたら、申告するのは正しいけれども、今回はドイツに引越しするということで、これらのものは自分で使うためのものであるから、まったく問題ないと言ってもらって通してもらった。</p>
+<p>泊まった宿は、現地のrelocation agentが教えてくれたところで、そこに泊まっていれば住民登録できるという。宿に着いたのは20時ごろ。</p>
+<p>5月20日の8時半にrelocation agentと宿のロビーで待ち合わせて、そのままWelcome Center Dresdenという場所で、住民登録等の面談。この面談は、relocation agentのひとが、ぎりぎりに空き枠を見つけて予約してくれたもの。いろいろと日本で準備してきた書類を見せたら、住民登録してもらえて、仮の就労許可証も出してもらえた。翌日から働けるとのこと。ただし、学位の証明書をドイツ語に訳して持っていくという条件と、健康保険の加入証明を持っていくという条件をつけられた。</p>
+<p>宿に戻って、健康保険の人と面談(これもrelocation agentの人に予約してもらった)し、加入する旨の書類にサインした。</p>
+<p>5月21日の午前に、銀行まで行って銀行の人と面談(これもrelocation agentの人に予約してもらった)して口座を開いた。のちに、いろいろな番号やカードが郵便で届いた。その足で携帯を買おうとしたら、月賦払いの承認が下りないとかで、面倒なことを言われたのでprepaidの携帯を買った。仮の就労許可はあったので、そのまま仕事に行った。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>5月19日にドイツに入った。入国にあたって日本のパスポートを見せた。働くためにドイツに来たと伝えると、外人局に行かなくてはならないことを知っているか聞かれ、知っていると言ったら通してもらえた。税関で、赤の門に行って、持っている高い品の品名、買った場所、値段の一覧を見せたら、]]>
+    </summary>
+    
+      <category term="dresden" scheme="https://yoichihirai.com/blog/tags/dresden/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[ドレスデン行きの理由]]></title>
+    <link href="https://yoichihirai.com/blog/reason/"/>
+    <id>https://yoichihirai.com/blog/reason/</id>
+    <published>2014-05-05T11:40:00.000Z</published>
+    <updated>2014-05-05T04:45:28.000Z</updated>
+    <content type="html"><![CDATA[<p>なんでドレスデンに行くのか、よく聞かれる。</p>
+<p>まず、<a href="https://yoichihirai.com/blog/new-market/" target="_blank" rel="external">証明士という職業</a>を作りたいとか言っていたら、既にformal method engineerという職名で募集をかけられて、どうもやることがまともそうなので、負けを認めて軍門に下る。</p>
+<h2 id="地理">地理</h2>
+<p>ドレスデンには路面電車がある。ドレスデンの路面電車は編成も長くて、路線もたくさんある。人口50万人程度の都市なのに、総延長130kmもの路線があるのだ。路面電車で暮らせてしまう。階段を上り下りしなくていいぶん、大都市の鉄道よりも楽かも知れない。ちなみに運転免許は取ったけれども、間違いが多めの人間なので、できる限り自動車の運転は避けたい。</p>
+<h2 id="文化">文化</h2>
+<p>ドイツで暮らした日本人の本をみると、わりと自分には暮らしやすそうな気がする。理屈っぽい、たいへんよろしい。個人をやらないといけないのは、まあ練習だと思おう。</p>
+<h2 id="2012年頃">2012年頃</h2>
+<p>自分が書いたものをみていると、どうも、2012年の春ごろに、将来のことをながなが考えていたようすがある。たとえば、立花隆がどこかの本で、ジャーナリストとしての活動方法として、みはらしがいいところに立っておもしろそうなところを見つけたら寄っていって掘るということを繰り返すのだという趣旨のことを書いていたのを思いだしていた。みはらしのいいところに行ったら今度は面白そうなところに飛びつくぞと思っていた節がある。</p>
+<p>それから、2012年5月1日に、このように書いている。「日本のふつうの人が海外にほいほい出かけられる時代というのは、あと何年もつかわからんが、案外すぐに終わってしまうものであろうという気がしておるので、どっか外に根を下ろすのもよかろう」。当時の気持ちを思いだすとだいぶ真面目に書いたようだが、今となっては、いるべきところの決め方がこう大雑把ではいけなくて、もっと局所的にどういう人となにをするのか見ないといけないと思う。ただし、日本がどうのとかいう話を気にするときに、動きまわれるようにしておくのは一つの作戦だ。</p>
+<p>やはり同じような時期に、「人生から情報量をたくさん取り出すには先が見えないことをするといい」と書いた。これに従うのは、いまでは、どうかと思う。つまり、いろとりどりの不幸につっこんでいくよりも、単調な幸福のほうがよい。ホワイトノイズに浸るのが一番いいかというと、それも違う(ホワイトノイズの各試行の違いが分かって感興を覚える人なら、いいのかもしれないけど)。毎日びっくりするのが望みかというと、それは違う気がする。このへんは、もっと考えてから、また別に書こう。</p>
+<h2 id="結局のところ">結局のところ</h2>
+<p>Ellery Queenの推理小説を一階述語論理式に書き起こそうとして時間をつぶしていた変な小学生が長じて、演繹して暮らしたい、記号列が動くなんて楽しい時代だ、ソフトウェアについて演繹して暮らすのだ、と、わがままを言い出し、このわがままが叶う世の中になるとするとどんな具合に進むのかなあと考えて、それに沿って進んでみている。</p>
+<h2 id="よみもの">よみもの</h2>
+<ul>
+<li><a href="http://www.shinchosha.co.jp/book/590077/" target="_blank" rel="external">通訳ダニエルシュタイン</a>。こういう人になりたいなあ、とは言えない壮絶な本(<a href="https://twitter.com/y0k1mura/status/11133533624" target="_blank" rel="external">@y0k1muraの紹介</a>)。国家も宗教も越えて、いつも同じことをしている。</li>
+<li><a href="http://gamayauber1001.wordpress.com/" target="_blank" rel="external">十全外人ガメ・オベールとはわしのことじゃ</a>。へんによくわかっていて、日本語で書けば誰にも読めないとかいって日本語で書いている。</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>なんでドレスデンに行くのか、よく聞かれる。</p>
+<p>まず、<a href="https://yoichihirai.com/blog/new-market/" target="_blank" rel="external">証明士という職業</a>を作りたいとか言ってい]]>
+    </summary>
+    
+      <category term="life" scheme="https://yoichihirai.com/blog/tags/life/"/>
+    
+      <category term="book" scheme="https://yoichihirai.com/blog/tags/book/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[accelerando]]></title>
+    <link href="https://yoichihirai.com/blog/accelerando/"/>
+    <id>https://yoichihirai.com/blog/accelerando/</id>
+    <published>2014-05-02T08:26:26.000Z</published>
+    <updated>2014-05-02T01:37:21.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="http://www.antipope.org/charlie/blog-static/fiction/accelerando/accelerando-intro.html" target="_blank" rel="external">Accelerando</a>という、singularityを描いたSFを読んだ。猫型ロボットの物語だが、ちゃんと猫らしく勝手な振る舞いをする。</p>
+<p>話の筋はともかく、出てくる技術がときどき面白い。訴訟を自動化してDOS攻撃するとか。</p>
+<p>物語の後半になると、だいたい仮想空間上の話になってしまって楽しくないのだが、登場人物が日常的にfork(2)するのはうらやましい。</p>
+<p>遅れた政府の描写:</p>
+<blockquote>
+<p>convinced that, if you have to pay for software, it must be worth something</p>
+</blockquote>
+<p>また、遅れた人々の描写:</p>
+<blockquote>
+<p>They’re like medieval peasants looking in puzzlement at the troubadour</p>
+</blockquote>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="http://www.antipope.org/charlie/blog-static/fiction/accelerando/accelerando-intro.html" target="_blank" rel="external">Acceleran]]>
+    </summary>
+    
+      <category term="book" scheme="https://yoichihirai.com/blog/tags/book/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[戸田山和久『哲学入門』について：もっと大胆にやれないか]]></title>
+    <link href="https://yoichihirai.com/blog/todayama001/"/>
+    <id>https://yoichihirai.com/blog/todayama001/</id>
+    <published>2014-04-30T09:20:00.000Z</published>
+    <updated>2014-04-30T02:23:15.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="https://www.chikumashobo.co.jp/product/9784480067685/" target="_blank" rel="external">戸田山和久『哲学入門』</a>について。</p>
+<p>この本は「ありそでなさそでやっぱりあるもの」を扱う。あるとかないとかの話をするなら、あるというのがどういうことか決めないと、話をすすめづらい。この本で、せっかく情報量の話を書くなら、どうしてこう言わなかったのだろう：情報量が大きいことが起きたらなにかあったということで、たとえば静寂に小さな音がするだけでなにかある感じがするのはそのためである。</p>
+<p>戸田山氏は「私は唯物論者である」と言ってから、意味とか機能とか「人生にとって大切な『存在もどき』」を物理的ものだらけの世界に煎じ詰めようとする。まず問題がわからない。意味とか機能とかを「存在もどき」と「もどき」をつけて呼びたくなる気分がわからない。機能というのがうまくいきそうもないことがうまくいくことなら、もともとうまくいきそうもなかったほどに情報量が大きくて、なにかあるということになる。また方法が気に入らない。起源を論じて煎じ詰める方法は姑息であると思う。昔の世界がいまより簡単だったらたまたま使える論法で、筋がわるい。</p>
+<p>この本は、最終的には自由や道徳の話をする。道徳の話は集団維持の話だから、進化で説明するのもいい。しかし自由については、せっかく情報量の話を書くなら、どうしてこう言わなかったのだろう：自由とは、自分がなにをしそうか、周囲の予想よりずっとよくわかっていることだと。ついでに、自分というのは世界の中でどうなるのかの予想がつきやすい一角だと。</p>
+<p>あとがきに「哲学はすべてを一枚の絵に描き込むことを目的とする営み」とある。これはやったほうがいい。でも話は簡単なほうがいい。シャノンの情報理論に目をつけたなら、もっと大胆に使ったほうが話が簡単になったのではないか。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="https://www.chikumashobo.co.jp/product/9784480067685/" target="_blank" rel="external">戸田山和久『哲学入門』</a>について。</p>
+<p>この本は「ありそでなさそでや]]>
+    </summary>
+    
+      <category term="book" scheme="https://yoichihirai.com/blog/tags/book/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[産総研を退職してドレスデンでFormal Method Engineerになる]]></title>
+    <link href="https://yoichihirai.com/blog/move/"/>
+    <id>https://yoichihirai.com/blog/move/</id>
+    <published>2014-04-19T05:29:09.000Z</published>
+    <updated>2014-04-19T05:29:09.000Z</updated>
+    <content type="html"><![CDATA[<p>産総研の博士型任期付研究員の職を昨日付で退職し、これから、ある会社でformal method engineerという職につくこととなった。ドイツのドレスデンに住むことになる。</p>
+<p>昨日まで、産総研の人だということで、いろいろな人に呼んでいただいたり来ていただいたり面白かった。不満がないのに辞める人は初めてだ、と呆れられてもいる。しかし、ドレスデンでの仕事がたいへん気になったので行ってしまう。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>産総研の博士型任期付研究員の職を昨日付で退職し、これから、ある会社でformal method engineerという職につくこととなった。ドイツのドレスデンに住むことになる。</p>
+<p>昨日まで、産総研の人だということで、いろいろな人に呼んでいただいたり来ていただいた]]>
+    </summary>
+    
+      <category term="life" scheme="https://yoichihirai.com/blog/tags/life/"/>
+    
+  </entry>
+  
+</feed>

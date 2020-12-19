@@ -1,0 +1,133 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Yoichi Hirai&#39;s Log</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="Yoichi Hirai" /><meta name="generator" content="Hugo 0.61.0" />
+    
+
+  <meta property="og:title" content="Yoichi Hirai&#39;s Log" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://yoichihirai.com/loggy/" />
+<meta property="og:updated_time" content="2019-12-19T08:57:22+01:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Yoichi Hirai&#39;s Log"/>
+<meta name="twitter:description" content=""/>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+  <script src="https://kit.fontawesome.com/b76b73e8e8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/loggy/css/styles.css" />    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/loggy/">Yoichi Hirai's Log</a>
+            </h1>
+
+      <ul id="social-media">
+             <li>
+               <a href="https://github.com/pirapira" title="GitHub">
+               <i class="fab fa-github fa-lg"></i>
+               </a>
+             </li>
+             <li>
+               <a href="https://twitter.com/pirapira" title="Twitter">
+               <i class="fab fa-twitter fa-lg"></i>
+               </a>
+             </li>
+      </ul>
+      
+    </header>
+
+    
+<nav>
+    <ul>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+<article>
+
+    <h1>Life Organization</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-12-03T16:36:31&#43;01:00">Dec 3, 2019</time>
+        </li>
+        
+
+        
+
+        <li>2 minutes read</li>
+    </ul>
+</aside>
+
+    
+
+    <p>I don't know the title of this post.</p>
+<p>Suddenly I have time. I need to structure my life again. I was clever enough to book an intensive German course before suspending my work, so my life has some structure. That's a temporary solution. The course ends this week.</p>
+<p>I dig around. When something makes more sense, I dig deeper. I also don't want to miss other possibilities. So I'm facing some exploration vs exploitation problem. I heard there are bunch of algorithms like UCB1.</p>
+<p>I can make a special software for managing my life based on UCB1. There is going to be a list of activities, each taking 40 minutes. After each try, I say it was good or bad. The software chooses the next activity, trying to hit the balance between having good time (exploitation) and trying newer activities (exploration).</p>
+<p>I'm not sure about one thing. Is UCB1 a good algorithm in my use case? I'd be adding more and more activities while I'm figuring things out. I'd be reading new codebase, so I'd be adding another entry in the list. If I add more and more activities on the go, I might be spending all the time on the newer additions. That's not good. To be honest, I tried organizing my life according to UCB1 a while ago, and I had precisely this problem.</p>
+<p>In that case, perhaps &ldquo;randomized probability matching&rdquo; might feel fairer.
+Assuming each activity is a Bernoulli distribution, how can I learn the parameters? <a href="https://www.projectrhea.org/rhea/index.php/Bayes_Parameter_Estimation_with_examples#Bayesian_Parameter_Estimation:_Bernoulli_Case_with_Beta_distribution_as_prior">It looks like it's doable, assuming that the parameter follows Beta distribution</a>.</p>
+<p>In the next post, I'll find a convenient implementation of this parameter estimation. I'd be surprized if there is none.</p>
+<p>The title of this post is &ldquo;life organization.&rdquo;</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        
+        <li>
+            <a href="https://yoichihirai.com/loggy/posts/beta-distr/">Picking a value from Beta Distribution <i class="fa fa-chevron-circle-right"></i> </a>
+        </li>
+        
+    </ul>
+</section>
+    
+
+
+
+
+
+</main>
+    <footer>
+        <h6>Copyright © 2019 - Yoichi Hirai |
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="https://yoichihirai.com/loggy/index.xml">Subscribe </a></h6>
+    </footer>
+</div>
+<script src="/loggy/js/scripts.js"></script>
+
+</body>
+</html>
+
