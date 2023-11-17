@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Length and Angle Generator with Location</title>
+</head>
+<body>
+    <h2>Random Length and Angle Generator with Location</h2>
+
+    <label for="avgLength">Average Length (in kilometers):</label>
+    <input type="number" id="avgLength" value="10"><br><br>
+
+    <label for="avgAngle">Average Angle (in degrees):</label>
+    <input type="number" id="avgAngle" value="45"><br><br>
+
+    <button onclick="generateAndLocate()">Generate and Locate</button>
+
+    <p id="result"></p>
+
+    <script>
+        function toRadians(degrees) {
+            return degrees * Math.PI / 180;
+        }
+
+        function toDegrees(radians) {
+            return radians * 180 / Math.PI;
+        }
+
+        function normalRandom(mean, stdDev) {
+            var u = 0, v = 0;
+            while(u === 0) u = Math.random(); //Converting [0,1) to (0,1)
+            while(v === 0) v = Math.random();
+            let num = Math.sqrt( -2.0 * Math.log( u ) ) * Math.cos( 2.0 * Math.PI * v );
+            return num * stdDev + mean;
+        }
+
+        function generateRandomValues(avgLength, avgAngle) {
+            var randomLength = normalRandom(avgLength, avgLength * 0.2);
+            var randomAngle = normalRandom(avgAngle, 20);
+
+            return { randomLength, randomAngle };
+        }
+
+        function calculateNextPoint(lat, lon, distance, angle) {
+            var R = 6371; // Radius of the Earth in km
+            var bearing = toRadians(angle); // Convert bearing to radians
+            var lat1 = toRadians(lat); // Current lat point converted to radians
+            var lon1 = toRadians(lon); // Current long point converted to radians
+
+            var lat2 = Math.asin(Math.sin(lat1) * Math.cos(distance / R) +
+                        Math.cos(lat1) * Math.sin(distance / R) * Math.cos(bearing));
+            var lon2 = lon1 + Math.atan2(Math.sin(bearing) * Math.sin(distance / R) * Math.cos(lat1),
+                         Math.cos(distance / R) - Math.sin(lat1) * Math.sin(lat2));
+
+            // Convert back to degrees
+            lat2 = toDegrees(lat2);
+            lon2 = toDegrees(lon2);
+
+            return { lat: lat2, lon: lon2 };
+        }
+
+        function generateAndLocate() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    var avgLength = parseFloat(document.getElementById('avgLength').value);
+                    var avgAngle = parseFloat(document.getElementById('avgAngle').value);
+
+                    var { randomLength, randomAngle } = generateRandomValues(avgLength, avgAngle);
+                    var nextPoint = calculateNextPoint(position.coords.latitude, position.coords.longitude, randomLength, randomAngle);
+
+                    document.getElementById('result').innerHTML =
+                        "Random Length: " + randomLength.toFixed(2) + " km<br>" +
+                        "Random Angle: " + randomAngle.toFixed(2) + " degrees<br>" +
+                        "Next Point Coordinates: <a href='https://www.google.com/maps/search/?api=1&query=" +
+                        nextPoint.lat.toFixed(5) + "," + nextPoint.lon.toFixed(5) + "' target='_blank'>Latitude " +
+                        nextPoint.lat.toFixed(5) + ", Longitude " + nextPoint.lon.toFixed(5) + "</a>";
+
+                });
+            } else { 
+                document.getElementById('result').innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+    </script>
+</body>
+</html>
+
