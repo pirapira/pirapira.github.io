@@ -33,10 +33,12 @@
         }
         #slider-container {
             position: relative;
+            margin-top: 20px; /* Add space for the number */
         }
         #lengthValue {
             position: absolute;
-            margin-left: -10px;
+            bottom: 100%; /* Position above the slider */
+            white-space: nowrap;
         }
     </style>
 </head>
@@ -48,7 +50,8 @@
         <input type="range" id="avgLength" min="1" max="20" value="10" step="0.1" oninput="updateLengthValue(this)">
         <span id="lengthValue">10</span>
     </div>
-    <br><br>
+    <br>
+    <br>
 
     <label for="avgAngle">Average Angle:</label>
     <select id="avgAngle">
@@ -130,18 +133,20 @@
                 document.getElementById('result').innerHTML = "Geolocation is not supported by this browser.";
             }
         }
-        function updateLengthValue(value) {
-            document.getElementById('lengthValue').textContent = value;
-        }
     </script>
     <script>
         function updateLengthValue(slider) {
             var valueDisplay = document.getElementById('lengthValue');
             var percent = (slider.value - slider.min) / (slider.max - slider.min);
-            var offset = percent * slider.offsetWidth;
+            var offset = percent * slider.offsetWidth - valueDisplay.offsetWidth / 2;
             valueDisplay.textContent = slider.value;
             valueDisplay.style.left = offset + 'px';
         }
+
+        // Initialize the position of the number on page load
+        window.onload = function() {
+            updateLengthValue(document.getElementById('avgLength'));
+        };
     </script>
 </body>
 </html>
