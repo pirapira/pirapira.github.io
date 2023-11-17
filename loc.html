@@ -23,13 +23,25 @@
         #result {
             margin-top: 20px;
         }
+        .slider-label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .slider-value {
+            margin-left: 10px;
+        }
     </style>
 </head>
 <body>
     <h2>Random Length and Angle Generator with Location</h2>
 
-    <label for="avgLength">Average Length (in kilometers):</label>
-    <input type="number" id="avgLength" value="10"><br><br>
+    <div class="slider-label">
+        <label for="avgLength">Average Length (in kilometers):</label>
+        <span id="lengthValue">10</span>
+    </div>
+    <input type="range" id="avgLength" min="1" max="20" value="10" step="0.1" oninput="updateLengthValue(this.value)">
+    <br><br>
 
     <label for="avgAngle">Average Angle (in degrees):</label>
     <input type="number" id="avgAngle" value="45"><br><br>
@@ -100,6 +112,9 @@
             } else { 
                 document.getElementById('result').innerHTML = "Geolocation is not supported by this browser.";
             }
+        }
+        function updateLengthValue(value) {
+            document.getElementById('lengthValue').textContent = value;
         }
     </script>
 </body>
