@@ -53,7 +53,7 @@
     <br>
     <br>
 
-    <p id="avgAngle">Orientation Angle: <span id="angleValue">0</span>°</p>
+    <p id="orientationAngle">Orientation Angle: <span id="avgAngle">0</span>°</p>
 
 
     <button onclick="generateAndLocate()">Generate and Locate</button>
@@ -106,7 +106,7 @@
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(function(position) {
                     var avgLength = parseFloat(document.getElementById('avgLength').value);
-                    var avgAngle = parseFloat(document.getElementById('avgAngle').value);
+                    var avgAngle = parseFloat(document.getElementById('avgAngle').textContent);
 
                     var { randomLength, randomAngle } = generateRandomValues(avgLength, avgAngle);
                     var nextPoint = calculateNextPoint(position.coords.latitude, position.coords.longitude, randomLength, randomAngle);
