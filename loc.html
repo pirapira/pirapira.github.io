@@ -55,8 +55,9 @@
 
     <p id="orientationAngle">Orientation Angle: <span id="avgAngle">0</span>°</p>
 
+    <p id="errorMessage" style="color: red; font-size: 20px; display: none;">Error: Necessary information not available.</p>
 
-    <button onclick="generateAndLocate()">Generate and Locate</button>
+    <button onclick="generateAndLocate()">Generate a Location</button>
 
     <p id="result"></p>
 
@@ -137,17 +138,23 @@
         window.onload = function() {
             updateLengthValue(document.getElementById('avgLength'));
         };
+
+        function handleOrientation(event) {
+            if (event.absolute && 'alpha' in event) {
+                var alpha = event.alpha;
+                var adjustedAlpha = (360 - alpha) % 360;
+                document.getElementById('avgAngle').textContent = adjustedAlpha.toFixed(2);
+                document.getElementById('errorMessage').style.display = 'none';
+            } else {
+                document.getElementById('errorMessage').style.display = 'block';
+            }
+        }
+
         if (window.DeviceOrientationEvent) {
             window.addEventListener("deviceorientationabsolute", handleOrientation, true);
         } else {
-            console.log("Device Orientation Absolute API not supported");
-        }
-
-        function handleOrientation(event) {
-            var alpha = event.alpha; // This should now represent the motion relative to true north
-            var adjustedAlpha = (360 - alpha) % 360;
-
-            document.getElementById('avgAngle').textContent = adjustedAlpha.toFixed(2);
+            document.getElementById('errorMessage').textContent = 'Device Orientation Absolute API not supported';
+            document.getElementById('errorMessage').style.display = 'block';
         }
     </script>
     <p>This page is just for me.</p>
