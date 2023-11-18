@@ -106,10 +106,14 @@
         function generateAndLocate() {
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(function(position) {
+                            var logLength = logSlider(document.getElementById('avgLength').value);
+
                             var avgLength = parseFloat(document.getElementById('avgLength').value);
                             var avgAngle = parseFloat(document.getElementById('avgAngle').textContent);
 
                             var { randomLength, randomAngle } = generateRandomValues(avgLength, avgAngle);
+                            var randomLength = normalRandom(logLength, logLength * 0.2);
+
                             var nextPoint = calculateNextPoint(position.coords.latitude, position.coords.longitude, randomLength, randomAngle);
 
                             document.getElementById('result').innerHTML =
@@ -132,10 +136,11 @@
     </script>
     <script>
         function updateLengthValue(slider) {
+            var logValue = logSlider(slider.value);
             var valueDisplay = document.getElementById('lengthValue');
+            valueDisplay.textContent = logValue.toFixed(2);
             var percent = (slider.value - slider.min) / (slider.max - slider.min);
             var offset = percent * slider.offsetWidth - valueDisplay.offsetWidth / 2;
-            valueDisplay.textContent = slider.value;
             valueDisplay.style.left = offset + 'px';
         }
 
@@ -161,6 +166,21 @@
             document.getElementById('errorMessage').textContent = 'Device Orientation Absolute API not supported';
             document.getElementById('errorMessage').style.display = 'block';
         }
+
+        function logSlider(position) {
+            // Adjust these parameters to change the behavior of the logarithmic slider
+            var minp = 0;
+            var maxp = 100;
+
+            var minv = Math.log(1);   // e.g., log(1km)
+            var maxv = Math.log(200); // e.g., log(200km)
+
+            // Calculate adjustment factor
+            var scale = (maxv - minv) / (maxp - minp);
+
+            return Math.exp(minv + scale * (position - minp));
+        }
+
     </script>
     <p>This page is just for me.</p>
 </body>
