@@ -106,22 +106,27 @@
         function generateAndLocate() {
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(function(position) {
-                    var avgLength = parseFloat(document.getElementById('avgLength').value);
-                    var avgAngle = parseFloat(document.getElementById('avgAngle').textContent);
+                            var avgLength = parseFloat(document.getElementById('avgLength').value);
+                            var avgAngle = parseFloat(document.getElementById('avgAngle').textContent);
 
-                    var { randomLength, randomAngle } = generateRandomValues(avgLength, avgAngle);
-                    var nextPoint = calculateNextPoint(position.coords.latitude, position.coords.longitude, randomLength, randomAngle);
+                            var { randomLength, randomAngle } = generateRandomValues(avgLength, avgAngle);
+                            var nextPoint = calculateNextPoint(position.coords.latitude, position.coords.longitude, randomLength, randomAngle);
 
-                    document.getElementById('result').innerHTML =
-                        "Random Length: " + randomLength.toFixed(2) + " km<br>" +
-                        "Random Angle: " + randomAngle.toFixed(2) + " degrees<br>" +
-                        "Next Point Coordinates: <a href='https://www.google.com/maps/search/?api=1&query=" +
-                        nextPoint.lat.toFixed(5) + "," + nextPoint.lon.toFixed(5) + "' target='_blank'>Latitude " +
-                        nextPoint.lat.toFixed(5) + ", Longitude " + nextPoint.lon.toFixed(5) + "(Google maps)</a>";
+                            document.getElementById('result').innerHTML =
+                                "Random Length: " + randomLength.toFixed(2) + " km<br>" +
+                                "Random Angle: " + randomAngle.toFixed(2) + " degrees<br>" +
+                                "Next Point Coordinates: <a href='https://www.google.com/maps/search/?api=1&query=" +
+                                nextPoint.lat.toFixed(5) + "," + nextPoint.lon.toFixed(5) + "' target='_blank'>Latitude " +
+                                nextPoint.lat.toFixed(5) + ", Longitude " + nextPoint.lon.toFixed(5) + "(Google maps)</a>";
 
+                }, function(error) {
+                    // Error callback for geolocation
+                    document.getElementById('errorMessage').textContent = 'Error: ' + error.message;
+                    document.getElementById('errorMessage').style.display = 'block';
                 });
-            } else { 
-                document.getElementById('result').innerHTML = "Geolocation is not supported by this browser.";
+            } else {
+                document.getElementById('errorMessage').textContent = 'Geolocation is not supported by this browser.';
+                document.getElementById('errorMessage').style.display = 'block';
             }
         }
     </script>
