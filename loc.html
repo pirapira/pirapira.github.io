@@ -145,9 +145,9 @@
 
         function handleOrientation(event) {
             var alpha = event.alpha; // This should now represent the motion relative to true north
+            var adjustedAlpha = (360 - alpha) % 360;
 
-            // Update the angle display
-            document.getElementById('avgAngle').textContent = alpha.toFixed(2);
+            document.getElementById('avgAngle').textContent = adjustedAlpha.toFixed(2);
         }
     </script>
     <p>This page is just for me.</p>
