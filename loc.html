@@ -169,11 +169,11 @@
 
         function logSlider(position) {
             // Adjust these parameters to change the behavior of the logarithmic slider
-            var minp = 0;
-            var maxp = 100;
+            var minp = 1;
+            var maxp = 20;
 
-            var minv = Math.log(1);   // e.g., log(1km)
-            var maxv = Math.log(200); // e.g., log(200km)
+            var minv = Math.log(0.01);
+            var maxv = Math.log(12);
 
             // Calculate adjustment factor
             var scale = (maxv - minv) / (maxp - minp);
