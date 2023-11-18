@@ -53,7 +53,7 @@
     <br>
     <br>
 
-    <p id="orientationAngle">Orientation Angle: <span id="angleValue">0</span>°</p>
+    <p id="avgAngle">Orientation Angle: <span id="angleValue">0</span>°</p>
 
 
     <button onclick="generateAndLocate()">Generate and Locate</button>
@@ -141,7 +141,7 @@
             var alpha = event.alpha; // Represents the motion of the device around the z axis (0° - 360°)
 
             // Update the angle display
-            document.getElementById('angleValue').textContent = alpha.toFixed(2);
+            document.getElementById('avgAngle').textContent = alpha.toFixed(2);
         }
         if (window.DeviceOrientationEvent) {
             window.addEventListener("deviceorientation", handleOrientation, true);
