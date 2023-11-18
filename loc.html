@@ -137,16 +137,17 @@
         window.onload = function() {
             updateLengthValue(document.getElementById('avgLength'));
         };
+        if (window.DeviceOrientationEvent) {
+            window.addEventListener("deviceorientationabsolute", handleOrientation, true);
+        } else {
+            console.log("Device Orientation Absolute API not supported");
+        }
+
         function handleOrientation(event) {
-            var alpha = event.alpha; // Represents the motion of the device around the z axis (0° - 360°)
+            var alpha = event.alpha; // This should now represent the motion relative to true north
 
             // Update the angle display
             document.getElementById('avgAngle').textContent = alpha.toFixed(2);
-        }
-        if (window.DeviceOrientationEvent) {
-            window.addEventListener("deviceorientation", handleOrientation, true);
-        } else {
-            console.log("Device Orientation API not supported");
         }
     </script>
     <p>This page is just for me.</p>
