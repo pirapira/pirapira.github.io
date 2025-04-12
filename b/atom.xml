@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title></title>
+    <link rel="self" type="application/atom+xml" href="https://yoichihirai.com/b/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://yoichihirai.com/b"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-04-12T00:00:00+00:00</updated>
+    <id>https://yoichihirai.com/b/atom.xml</id>
+    <entry xml:lang="en">
+        <title>2025-04-12</title>
+        <published>2025-04-12T00:00:00+00:00</published>
+        <updated>2025-04-12T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://yoichihirai.com/b/posts/20250412/"/>
+        <id>https://yoichihirai.com/b/posts/20250412/</id>
+        
+        <content type="html" xml:base="https://yoichihirai.com/b/posts/20250412/">&lt;ul&gt;
+&lt;li&gt;started writing &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;pirapira&#x2F;reasonable-manifesto&quot;&gt;reasonable manifesto&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;found &lt;a href=&quot;https:&#x2F;&#x2F;designmanifestos.org&quot;&gt;a list of manifestos&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.bbc.co.uk&#x2F;sounds&#x2F;play&#x2F;b090fwds&quot;&gt;No more manifestos&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;I like &lt;a href=&quot;https:&#x2F;&#x2F;designmanifestos.org&#x2F;gilbert-and-george-the-ten-commandments&#x2F;&quot;&gt;Gilbert and George: The Ten Commandments&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>2025-04-11</title>
+        <published>2025-04-11T00:00:00+00:00</published>
+        <updated>2025-04-11T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://yoichihirai.com/b/posts/20250411/"/>
+        <id>https://yoichihirai.com/b/posts/20250411/</id>
+        
+        <content type="html" xml:base="https://yoichihirai.com/b/posts/20250411/">&lt;ul&gt;
+&lt;li&gt;watched a bit of &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=lfHX2hHRMVQ&quot;&gt;lecture 2 of reinforcement learning&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;read a few pages into Zweig&#x27;s Welt von Gestern&lt;&#x2F;li&gt;
+&lt;li&gt;continued &lt;a href=&quot;https:&#x2F;&#x2F;mevolution.io&quot;&gt;the mevolution paper&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>2025-04-10</title>
+        <published>2025-04-10T00:00:00+00:00</published>
+        <updated>2025-04-10T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://yoichihirai.com/b/posts/20250410/"/>
+        <id>https://yoichihirai.com/b/posts/20250410/</id>
+        
+        <content type="html" xml:base="https://yoichihirai.com/b/posts/20250410/">&lt;ul&gt;
+&lt;li&gt;discovered &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ctzurcanu&#x2F;virtues&quot;&gt;a document&lt;&#x2F;a&gt; about virtues&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;mevolution.io&quot;&gt;the smtx whitepaper&lt;&#x2F;a&gt; is a great read
+&lt;ul&gt;
+&lt;li&gt;just four pages into it&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;reading &lt;a href=&quot;https:&#x2F;&#x2F;graypaper.com&quot;&gt;JAM paper&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;entering 3.2. feeling nostalgic&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;found a paper &lt;a href=&quot;https:&#x2F;&#x2F;www.cambridge.org&#x2F;core&#x2F;journals&#x2F;bulletin-of-symbolic-logic&#x2F;article&#x2F;defense-of-logicism&#x2F;A7F3DFF29C85BE044C6DDBBBB81CA6B4&quot;&gt;A Defence of Logicism&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;listened to a &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=girZNw51Ro4&quot;&gt;podcast&lt;&#x2F;a&gt; where Gavin Wood spoke about different things
+&lt;ul&gt;
+&lt;li&gt;among them, AI is a big trust mechanism while Web3 stands for truth&lt;&#x2F;li&gt;
+&lt;li&gt;my preference is deduction over induction; there&#x27;s some overlap&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>2025-04-09</title>
+        <published>2025-04-09T00:00:00+00:00</published>
+        <updated>2025-04-09T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://yoichihirai.com/b/posts/20250409/"/>
+        <id>https://yoichihirai.com/b/posts/20250409/</id>
+        
+        <content type="html" xml:base="https://yoichihirai.com/b/posts/20250409/">&lt;ul&gt;
+&lt;li&gt;Reading a &lt;a href=&quot;https:&#x2F;&#x2F;sethna.lassp.cornell.edu&#x2F;StatMech&#x2F;&quot;&gt;statical mechanics text book&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;Especially, re-reading the chapter about entropy&lt;&#x2F;li&gt;
+&lt;li&gt;I guess this time I&#x27;ll try to solve exercises&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Starting reading &lt;a href=&quot;https:&#x2F;&#x2F;graypaper.com&quot;&gt;JAM gray paper&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;What is Elves?&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>2025-04-07</title>
+        <published>2025-04-07T00:00:00+00:00</published>
+        <updated>2025-04-07T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://yoichihirai.com/b/posts/20250407/"/>
+        <id>https://yoichihirai.com/b/posts/20250407/</id>
+        
+        <content type="html" xml:base="https://yoichihirai.com/b/posts/20250407/">&lt;ul&gt;
+&lt;li&gt;watched &lt;a href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;2pWv7GOvuf0?si=CpGERAxzNJ3zDzW1&quot;&gt;a video about reinforcement learning&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;I&#x27;ll watch &lt;a href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;lfHX2hHRMVQ?si=CopJBxe9fXF9TWGR&quot;&gt;the next one&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;got the &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.mpi-sws.org&#x2F;iris&#x2F;lambda-rust&#x2F;-&#x2F;issues&#x2F;9&quot;&gt;issue&lt;&#x2F;a&gt; about outdated version numbers thankfully fixed&lt;&#x2F;li&gt;
+&lt;li&gt;still playing nethack with the &lt;a href=&quot;..&#x2F;20250402&quot;&gt;archeologist&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;visited a cafe&lt;&#x2F;li&gt;
+&lt;li&gt;browsing things following &lt;a href=&quot;http:&#x2F;&#x2F;markforster.squarespace.com&#x2F;autofocus-system&#x2F;&quot;&gt;the autofocus time management&lt;&#x2F;a&gt; method&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>2025-04-06</title>
+        <published>2025-04-06T00:00:00+00:00</published>
+        <updated>2025-04-06T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://yoichihirai.com/b/posts/20250406/"/>
+        <id>https://yoichihirai.com/b/posts/20250406/</id>
+        
+        <content type="html" xml:base="https://yoichihirai.com/b/posts/20250406/">&lt;ul&gt;
+&lt;li&gt;building &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.mpi-sws.org&#x2F;iris&#x2F;lambda-rust&#x2F;-&#x2F;tree&#x2F;masters&#x2F;rusthornbelt&quot;&gt;rusthornbelt&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;took some time to figure it out.
+&lt;ul&gt;
+&lt;li&gt;I could not open a merge request.&lt;&#x2F;li&gt;
+&lt;li&gt;I filed an &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.mpi-sws.org&#x2F;iris&#x2F;lambda-rust&#x2F;-&#x2F;issues&#x2F;9&quot;&gt;issue&lt;&#x2F;a&gt; about it.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;I guess I should also read papers about RustHornBelt.&lt;&#x2F;li&gt;
+&lt;li&gt;reading Buchanan: The Limits of Liberty
+&lt;ul&gt;
+&lt;li&gt;In cyber security, orderly anarchy is something to avoid. Things that can be broken will be broken.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>2025-04-05</title>
+        <published>2025-04-05T00:00:00+00:00</published>
+        <updated>2025-04-05T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://yoichihirai.com/b/posts/20250405/"/>
+        <id>https://yoichihirai.com/b/posts/20250405/</id>
+        
+        <content type="html" xml:base="https://yoichihirai.com/b/posts/20250405/">&lt;ul&gt;
+&lt;li&gt;contacted an acquaintance. got a paper recommended.&lt;&#x2F;li&gt;
+&lt;li&gt;still playing nethack with the &lt;a href=&quot;..&#x2F;20250402&quot;&gt;archeologist&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>2025-04-04</title>
+        <published>2025-04-04T00:00:00+00:00</published>
+        <updated>2025-04-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://yoichihirai.com/b/posts/20250404/"/>
+        <id>https://yoichihirai.com/b/posts/20250404/</id>
+        
+        <content type="html" xml:base="https://yoichihirai.com/b/posts/20250404/">&lt;h3 id=&quot;done&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#done&quot; aria-label=&quot;Anchor link for: done&quot;&gt;done&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;visited a cafe&lt;&#x2F;li&gt;
+&lt;li&gt;done some decluttering&lt;&#x2F;li&gt;
+&lt;li&gt;just how quickly a week goes&lt;&#x2F;li&gt;
+&lt;li&gt;read some old journals, I&#x27;ve written very interesting things&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>2025-04-03</title>
+        <published>2025-04-03T00:00:00+00:00</published>
+        <updated>2025-04-03T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://yoichihirai.com/b/posts/20250403/"/>
+        <id>https://yoichihirai.com/b/posts/20250403/</id>
+        
+        <content type="html" xml:base="https://yoichihirai.com/b/posts/20250403/">&lt;h3 id=&quot;doing&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#doing&quot; aria-label=&quot;Anchor link for: doing&quot;&gt;doing&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;read something for project atlas (which is a secret codename for something that I am working on).&lt;&#x2F;li&gt;
+&lt;li&gt;walked around&lt;&#x2F;li&gt;
+&lt;li&gt;visited a cafe&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>2025-04-02</title>
+        <published>2025-04-02T00:00:00+00:00</published>
+        <updated>2025-04-02T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://yoichihirai.com/b/posts/20250402/"/>
+        <id>https://yoichihirai.com/b/posts/20250402/</id>
+        
+        <content type="html" xml:base="https://yoichihirai.com/b/posts/20250402/">&lt;h3 id=&quot;doing&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#doing&quot; aria-label=&quot;Anchor link for: doing&quot;&gt;doing&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;..&#x2F;zola&quot;&gt;setting up this blog&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;I&#x27;ve deployed it! It&#x27;s live!&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;not-matthias&#x2F;apollo&#x2F;pull&#x2F;113&quot;&gt;filed a PR about mathjax configuration in extra section&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;removed all notifications on github
+&lt;ul&gt;
+&lt;li&gt;I&#x27;ll unsubscribe from most things as they send me notifications.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;exploring &lt;a href=&quot;https:&#x2F;&#x2F;sel4.systems&quot;&gt;sel4&lt;&#x2F;a&gt; related resources
+&lt;ul&gt;
+&lt;li&gt;found &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;seL4&#x2F;l4v&#x2F;tree&#x2F;master&quot;&gt;l4v&lt;&#x2F;a&gt;. I&#x27;ll try building it.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.nethack.org&quot;&gt;Nethack&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;I am now playing an archeologist. I polymorphed a pet dog into a gray dragon. I got past sokoban and gnomish mines, so this one is somewhat promising.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>2025-03-30</title>
+        <published>2025-03-30T00:00:00+00:00</published>
+        <updated>2025-03-30T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://yoichihirai.com/b/posts/20250330/"/>
+        <id>https://yoichihirai.com/b/posts/20250330/</id>
+        
+        <content type="html" xml:base="https://yoichihirai.com/b/posts/20250330/">&lt;h3 id=&quot;doing&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#doing&quot; aria-label=&quot;Anchor link for: doing&quot;&gt;doing&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;..&#x2F;zola&quot;&gt;setting up this blog&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;watching &lt;a href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;2pWv7GOvuf0?si=bOI4nNrXNVIJ3Cfg&quot;&gt;a course on reinforcement learning&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&quot;science of decision making&quot;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Setting up this blog</title>
+        <published>2025-03-30T00:00:00+00:00</published>
+        <updated>2025-03-30T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://yoichihirai.com/b/posts/zola/"/>
+        <id>https://yoichihirai.com/b/posts/zola/</id>
+        
+        <content type="html" xml:base="https://yoichihirai.com/b/posts/zola/">&lt;p&gt;I need some fields to cultivate. So I&#x27;ve setup this blog.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;done&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#done&quot; aria-label=&quot;Anchor link for: done&quot;&gt;done&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;LaTeX syntax $x ^ 4 = y$.&lt;&#x2F;p&gt;
+&lt;p&gt;I needed a bit of time to figure out that the configuration&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;mathjax = true
+&lt;&#x2F;span&gt;&lt;span&gt;mathjax_dollar_inline_enable = true
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;needs to be in &lt;code&gt;[extra]&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;wants&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#wants&quot; aria-label=&quot;Anchor link for: wants&quot;&gt;wants&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;file a PR so that it&#x27;s clearer that the mathjax config items need to be in &lt;code&gt;[extra]&lt;&#x2F;code&gt;. (EDIT: done on &lt;a href=&quot;..&#x2F;20250402&quot;&gt;2025-04-02&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;try out mermaid syntax for diagram&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+</feed>
