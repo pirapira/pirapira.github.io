@@ -4,8 +4,56 @@
     <link rel="self" type="application/atom+xml" href="https://yoichihirai.com/b/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://yoichihirai.com/b"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2025-04-12T00:00:00+00:00</updated>
+    <updated>2025-04-15T00:00:00+00:00</updated>
     <id>https://yoichihirai.com/b/atom.xml</id>
+    <entry xml:lang="en">
+        <title>2025-04-15</title>
+        <published>2025-04-15T00:00:00+00:00</published>
+        <updated>2025-04-15T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://yoichihirai.com/b/posts/20250415/"/>
+        <id>https://yoichihirai.com/b/posts/20250415/</id>
+        
+        <content type="html" xml:base="https://yoichihirai.com/b/posts/20250415/">&lt;ul&gt;
+&lt;li&gt;continued with the &lt;a href=&quot;https:&#x2F;&#x2F;graypaper.com&quot;&gt;JAM paper&lt;&#x2F;a&gt; a bit.
+&lt;ul&gt;
+&lt;li&gt;Dictionaries form a class, not a set? This is not a big issue at all.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>2025-04-13</title>
+        <published>2025-04-13T00:00:00+00:00</published>
+        <updated>2025-04-13T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://yoichihirai.com/b/posts/20250413/"/>
+        <id>https://yoichihirai.com/b/posts/20250413/</id>
+        
+        <content type="html" xml:base="https://yoichihirai.com/b/posts/20250413/">&lt;ul&gt;
+&lt;li&gt;had a rather long walk&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="en">
         <title>2025-04-12</title>
         <published>2025-04-12T00:00:00+00:00</published>
