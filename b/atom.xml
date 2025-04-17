@@ -33,6 +33,28 @@
         
     </entry>
     <entry xml:lang="en">
+        <title>2025-04-16</title>
+        <published>2025-04-16T00:00:00+00:00</published>
+        <updated>2025-04-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://yoichihirai.com/b/posts/20250417/"/>
+        <id>https://yoichihirai.com/b/posts/20250417/</id>
+        
+        <content type="html" xml:base="https://yoichihirai.com/b/posts/20250417/">&lt;ul&gt;
+&lt;li&gt;skimmed through &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;madvorak&#x2F;lean4-tactics&quot;&gt;lean4-tactics&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
         <title>2025-04-15</title>
         <published>2025-04-15T00:00:00+00:00</published>
         <updated>2025-04-15T00:00:00+00:00</updated>
