@@ -68,7 +68,16 @@
         <id>https://yoichihirai.com/b/posts/20250420/</id>
         
         <content type="html" xml:base="https://yoichihirai.com/b/posts/20250420/">&lt;ul&gt;
-&lt;li&gt;solved &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;PatrickMassot&#x2F;GlimpseOfLean&#x2F;blob&#x2F;8470efa5256bdf9b43fdaaae2507ee9836957966&#x2F;GlimpseOfLean&#x2F;Exercises&#x2F;01Rewriting.lean&quot;&gt;the first file&lt;&#x2F;a&gt; in &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;PatrickMassot&#x2F;GlimpseOfLean&quot;&gt;a lean tutorial&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;solved &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;PatrickMassot&#x2F;GlimpseOfLean&#x2F;blob&#x2F;8470efa5256bdf9b43fdaaae2507ee9836957966&#x2F;GlimpseOfLean&#x2F;Exercises&#x2F;01Rewriting.lean&quot;&gt;the first file&lt;&#x2F;a&gt; in &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;PatrickMassot&#x2F;GlimpseOfLean&quot;&gt;a lean tutorial&lt;&#x2F;a&gt;.
+&lt;ul&gt;
+&lt;li&gt;The Lean plugin of vscode is quite smooth.
+&lt;ul&gt;
+&lt;li&gt;In terms of silently setting up the necessary build systems, executables and libraries,&lt;&#x2F;li&gt;
+&lt;li&gt;and in terms of showing interesting things when the cursor is within a term or in a tactic.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
         
