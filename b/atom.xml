@@ -4,8 +4,30 @@
     <link rel="self" type="application/atom+xml" href="https://yoichihirai.com/b/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://yoichihirai.com/b"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2025-04-18T00:00:00+00:00</updated>
+    <updated>2025-04-20T00:00:00+00:00</updated>
     <id>https://yoichihirai.com/b/atom.xml</id>
+    <entry xml:lang="en">
+        <title>About Rocq</title>
+        <published>2025-04-20T00:00:00+00:00</published>
+        <updated>2025-04-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://yoichihirai.com/b/posts/rocq/"/>
+        <id>https://yoichihirai.com/b/posts/rocq/</id>
+        
+        <content type="html" xml:base="https://yoichihirai.com/b/posts/rocq/">&lt;p&gt;There&#x27;s a proof assistant now called Rocq (used to be Coq). I&#x27;m not writing about technical things here. I&#x27;m thinking about how it changed my life.&lt;&#x2F;p&gt;
+&lt;p&gt;I moved from Japan to Europe twice, before and after getting a PhD in computer science. The second move to Europe was for a position in Germany that involved using Coq. If not for Coq I wouldn&#x27;t be in Europe now probably.&lt;&#x2F;p&gt;
+&lt;p&gt;I suddenly realized this when I was going through a &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;PatrickMassot&#x2F;GlimpseOfLean&quot;&gt;lean tutorial&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="en">
         <title>2025-04-18</title>
         <published>2025-04-18T00:00:00+00:00</published>
@@ -25,6 +47,28 @@
         <content type="html" xml:base="https://yoichihirai.com/b/posts/20250418/">&lt;ul&gt;
 &lt;li&gt;The &lt;a href=&quot;..&#x2F;20250402&quot;&gt;Archeologist&lt;&#x2F;a&gt; ascended.&lt;&#x2F;li&gt;
 &lt;li&gt;Improved the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;pirapira&#x2F;reasonable-manifesto&quot;&gt;reasonable manifesto&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>2025-04-18</title>
+        <published>2025-04-18T00:00:00+00:00</published>
+        <updated>2025-04-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://yoichihirai.com/b/posts/20250420/"/>
+        <id>https://yoichihirai.com/b/posts/20250420/</id>
+        
+        <content type="html" xml:base="https://yoichihirai.com/b/posts/20250420/">&lt;ul&gt;
+&lt;li&gt;solved &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;PatrickMassot&#x2F;GlimpseOfLean&#x2F;blob&#x2F;8470efa5256bdf9b43fdaaae2507ee9836957966&#x2F;GlimpseOfLean&#x2F;Exercises&#x2F;01Rewriting.lean&quot;&gt;the first file&lt;&#x2F;a&gt; in &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;PatrickMassot&#x2F;GlimpseOfLean&quot;&gt;a lean tutorial&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
         

@@ -74,6 +74,10 @@
         <lastmod>2025-04-18</lastmod>
     </url>
     <url>
+        <loc>https://yoichihirai.com/b/posts/20250420/</loc>
+        <lastmod>2025-04-18</lastmod>
+    </url>
+    <url>
         <loc>https://yoichihirai.com/b/posts/page/1/</loc>
     </url>
     <url>
@@ -81,6 +85,10 @@
     </url>
     <url>
         <loc>https://yoichihirai.com/b/posts/page/3/</loc>
+    </url>
+    <url>
+        <loc>https://yoichihirai.com/b/posts/rocq/</loc>
+        <lastmod>2025-04-20</lastmod>
     </url>
     <url>
         <loc>https://yoichihirai.com/b/posts/zola/</loc>
@@ -111,6 +119,15 @@
         <loc>https://yoichihirai.com/b/tags/blog/</loc>
     </url>
     <url>
+        <loc>https://yoichihirai.com/b/tags/europe/</loc>
+    </url>
+    <url>
         <loc>https://yoichihirai.com/b/tags/journal/</loc>
+    </url>
+    <url>
+        <loc>https://yoichihirai.com/b/tags/lean/</loc>
+    </url>
+    <url>
+        <loc>https://yoichihirai.com/b/tags/rocq/</loc>
     </url>
 </urlset>
