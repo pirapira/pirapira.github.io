@@ -60,6 +60,29 @@
         
     </entry>
     <entry xml:lang="en">
+        <title>IOU vs UTXO</title>
+        <published>2025-04-20T00:00:00+00:00</published>
+        <updated>2025-04-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://yoichihirai.com/b/posts/utxo/"/>
+        <id>https://yoichihirai.com/b/posts/utxo/</id>
+        
+        <content type="html" xml:base="https://yoichihirai.com/b/posts/utxo/">&lt;p&gt;A state in bitcoin contains utxos (unspend transaction outputs).&lt;&#x2F;p&gt;
+&lt;p&gt;What if it contains IOUs? IOUs require a way of enforcement. We can piggy-back on the existing system.&lt;&#x2F;p&gt;
+&lt;p&gt;Payment is done by destroying the IOUs. I&#x27;ll give you a coffee if you cancel my debt by an amount.&lt;&#x2F;p&gt;
+&lt;p&gt;In this system, will there be a need to worry about double-spending?&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
         <title>2025-04-18</title>
         <published>2025-04-18T00:00:00+00:00</published>
         <updated>2025-04-18T00:00:00+00:00</updated>
