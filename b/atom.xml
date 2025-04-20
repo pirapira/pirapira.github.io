@@ -53,7 +53,7 @@
         <link rel="alternate" type="text/html" href="https://yoichihirai.com/b/posts/rocq/"/>
         <id>https://yoichihirai.com/b/posts/rocq/</id>
         
-        <content type="html" xml:base="https://yoichihirai.com/b/posts/rocq/">&lt;p&gt;There&#x27;s a proof assistant now called Rocq (used to be Coq). I&#x27;m not writing about technical things here. I&#x27;m thinking about how it changed my life.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://yoichihirai.com/b/posts/rocq/">&lt;p&gt;There&#x27;s a proof assistant now called &lt;a href=&quot;https:&#x2F;&#x2F;rocq-prover.org&quot;&gt;Rocq&lt;&#x2F;a&gt; (used to be Coq). I&#x27;m not writing about technical things here. I&#x27;m thinking about how it changed my life.&lt;&#x2F;p&gt;
 &lt;p&gt;I moved from Japan to Europe twice, before and after getting a PhD in computer science. The second move to Europe was for a position in Germany that involved using Coq. If not for Coq I wouldn&#x27;t be in Europe now probably.&lt;&#x2F;p&gt;
 &lt;p&gt;I suddenly realized this when I was going through a &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;PatrickMassot&#x2F;GlimpseOfLean&quot;&gt;lean tutorial&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 </content>
