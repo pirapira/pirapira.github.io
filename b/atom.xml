@@ -23,9 +23,10 @@
         <id>https://yoichihirai.com/b/posts/20250421/</id>
         
         <content type="html" xml:base="https://yoichihirai.com/b/posts/20250421/">&lt;ul&gt;
-&lt;li&gt;Still reading the JAM paper
+&lt;li&gt;Still reading the &lt;a href=&quot;https:&#x2F;&#x2F;graypaper.com&quot;&gt;JAM paper&lt;&#x2F;a&gt;
 &lt;ul&gt;
 &lt;li&gt;The greek letter $\vartheta$ is a variant of theta $\theta$.&lt;&#x2F;li&gt;
+&lt;li&gt;Since so many components of the state can be processed in parallel, do they really need to live in a single block?&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
