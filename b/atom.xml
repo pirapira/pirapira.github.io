@@ -4,8 +4,40 @@
     <link rel="self" type="application/atom+xml" href="https://yoichihirai.com/b/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://yoichihirai.com/b"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2025-04-24T00:00:00+00:00</updated>
+    <updated>2025-04-25T00:00:00+00:00</updated>
     <id>https://yoichihirai.com/b/atom.xml</id>
+    <entry xml:lang="en">
+        <title>2025-04-25</title>
+        <published>2025-04-25T00:00:00+00:00</published>
+        <updated>2025-04-25T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://yoichihirai.com/b/posts/20250425/"/>
+        <id>https://yoichihirai.com/b/posts/20250425/</id>
+        
+        <content type="html" xml:base="https://yoichihirai.com/b/posts/20250425/">&lt;ul&gt;
+&lt;li&gt;still reading &lt;a href=&quot;https:&#x2F;&#x2F;graypaper.com&quot;&gt;JAM paper&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;my guess is that the onchain component will become a bottleneck&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;also solved &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;PatrickMassot&#x2F;GlimpseOfLean&#x2F;blob&#x2F;master&#x2F;GlimpseOfLean&#x2F;Exercises&#x2F;03Forall.lean&quot;&gt;the third file&lt;&#x2F;a&gt; of &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;PatrickMassot&#x2F;GlimpseOfLean&#x2F;tree&#x2F;master&quot;&gt;GlimpseOfLean&lt;&#x2F;a&gt;.
+&lt;ul&gt;
+&lt;li&gt;This tutorial introduces BHK-interpretation of the intuitionistic logic.&lt;&#x2F;li&gt;
+&lt;li&gt;Learned &lt;code&gt;apply?&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="en">
         <title>2025-04-24</title>
         <published>2025-04-24T00:00:00+00:00</published>
