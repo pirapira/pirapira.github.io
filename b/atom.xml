@@ -4,8 +4,34 @@
     <link rel="self" type="application/atom+xml" href="https://yoichihirai.com/b/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://yoichihirai.com/b"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2025-04-25T00:00:00+00:00</updated>
+    <updated>2025-04-27T00:00:00+00:00</updated>
     <id>https://yoichihirai.com/b/atom.xml</id>
+    <entry xml:lang="en">
+        <title>2025-04-27</title>
+        <published>2025-04-27T00:00:00+00:00</published>
+        <updated>2025-04-27T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://yoichihirai.com/b/posts/20250427/"/>
+        <id>https://yoichihirai.com/b/posts/20250427/</id>
+        
+        <content type="html" xml:base="https://yoichihirai.com/b/posts/20250427/">&lt;ul&gt;
+&lt;li&gt;solved the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;PatrickMassot&#x2F;GlimpseOfLean&#x2F;blob&#x2F;dd4749b2295a80f08832f8253bca5b46cb2965d2&#x2F;GlimpseOfLean&#x2F;Exercises&#x2F;Topics&#x2F;ClassicalPropositionalLogic.lean&quot;&gt;classical propositional logic exercise&lt;&#x2F;a&gt; until weakening
+&lt;ul&gt;
+&lt;li&gt;somehow I was not expecting a deep embedding when I opened the file.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="en">
         <title>2025-04-25</title>
         <published>2025-04-25T00:00:00+00:00</published>
