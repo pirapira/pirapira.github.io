@@ -23,9 +23,10 @@
         <id>https://yoichihirai.com/b/posts/20250427/</id>
         
         <content type="html" xml:base="https://yoichihirai.com/b/posts/20250427/">&lt;ul&gt;
-&lt;li&gt;solved the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;PatrickMassot&#x2F;GlimpseOfLean&#x2F;blob&#x2F;dd4749b2295a80f08832f8253bca5b46cb2965d2&#x2F;GlimpseOfLean&#x2F;Exercises&#x2F;Topics&#x2F;ClassicalPropositionalLogic.lean&quot;&gt;classical propositional logic exercise&lt;&#x2F;a&gt; until weakening
+&lt;li&gt;solved the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;PatrickMassot&#x2F;GlimpseOfLean&#x2F;blob&#x2F;dd4749b2295a80f08832f8253bca5b46cb2965d2&#x2F;GlimpseOfLean&#x2F;Exercises&#x2F;Topics&#x2F;ClassicalPropositionalLogic.lean&quot;&gt;classical propositional logic exercise&lt;&#x2F;a&gt;, but not the optional completeness
 &lt;ul&gt;
 &lt;li&gt;somehow I was not expecting a deep embedding when I opened the file.&lt;&#x2F;li&gt;
+&lt;li&gt;somehow I was not expecting &lt;code&gt;by_contra&lt;&#x2F;code&gt; to be available.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
