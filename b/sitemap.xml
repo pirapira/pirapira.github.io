@@ -114,6 +114,10 @@
         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
+        <loc>https://yoichihirai.com/b/posts/20250509/</loc>
+        <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
         <loc>https://yoichihirai.com/b/posts/page/1/</loc>
     </url>
     <url>
@@ -181,5 +185,8 @@
     </url>
     <url>
         <loc>https://yoichihirai.com/b/tags/rocq/</loc>
+    </url>
+    <url>
+        <loc>https://yoichihirai.com/b/tags/scheme/</loc>
     </url>
 </urlset>
