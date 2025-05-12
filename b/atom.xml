@@ -4,8 +4,30 @@
     <link rel="self" type="application/atom+xml" href="https://yoichihirai.com/b/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://yoichihirai.com/b"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2025-05-09T00:00:00+00:00</updated>
+    <updated>2025-05-12T00:00:00+00:00</updated>
     <id>https://yoichihirai.com/b/atom.xml</id>
+    <entry xml:lang="en">
+        <title>2025-05-12</title>
+        <published>2025-05-12T00:00:00+00:00</published>
+        <updated>2025-05-12T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://yoichihirai.com/b/posts/20250512/"/>
+        <id>https://yoichihirai.com/b/posts/20250512/</id>
+        
+        <content type="html" xml:base="https://yoichihirai.com/b/posts/20250512/">&lt;ul&gt;
+&lt;li&gt;I was extending the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;pirapira&#x2F;reasonable-manifesto&quot;&gt;reasonable engineering manifesto&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="en">
         <title>2025-05-09</title>
         <published>2025-05-09T00:00:00+00:00</published>
