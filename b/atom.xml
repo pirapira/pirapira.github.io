@@ -42,7 +42,7 @@ and you wouldn&#x27;t take the bet, and so on. If you use this kind of thinking 
 &lt;li&gt;One issue with logarithm is you don&#x27;t get $\log 0$ because no $x$ can bring you to $0 ^ x = e$ (maybe not $e$, whichever base of the logarithm you&#x27;re using). So complete ruins look like negative infinity. That&#x27;s a feature because I think it makes sense to avoid ruins in life.&lt;&#x2F;li&gt;
 &lt;li&gt;Some people say &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Weber%E2%80%93Fechner_law&quot;&gt;perception is logarithmic&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;p&gt;Let me say I&#x27;m better at mentally grasping $p\log U &#x2F; T$ than computing $U^{p(1&#x2F;T)}$. Especially, I don&#x27;t have a good intuition on taking $(\cdot)^{(1&#x2F;T)}$. There&#x27;s another reason. Sometimes I can guess $\log U$ but I don&#x27;t know $U$ because I don&#x27;t know the base of the logarithm!&lt;&#x2F;p&gt;
+&lt;p&gt;Let me say I&#x27;m better at mentally grasping $p\log U &#x2F; T$ than computing $U^{(p&#x2F;T)}$. Especially, I don&#x27;t have a good intuition on taking $(\cdot)^{(1&#x2F;T)}$. There&#x27;s another reason. Sometimes I can guess $\log U$ but I don&#x27;t know $U$ because I don&#x27;t know the base of the logarithm!&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;what-to-do-with-this&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#what-to-do-with-this&quot; aria-label=&quot;Anchor link for: what-to-do-with-this&quot;&gt;What to do with this&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;For each opportunity, potential project, something I could learn and such, I assign&lt;&#x2F;p&gt;
 &lt;ul&gt;
