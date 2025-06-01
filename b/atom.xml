@@ -4,8 +4,61 @@
     <link rel="self" type="application/atom+xml" href="https://yoichihirai.com/b/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://yoichihirai.com/b"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2025-05-12T00:00:00+00:00</updated>
+    <updated>2025-06-01T00:00:00+00:00</updated>
     <id>https://yoichihirai.com/b/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Evaluating Life Opportunities with Kelly Criterion</title>
+        <published>2025-06-01T00:00:00+00:00</published>
+        <updated>2025-06-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://yoichihirai.com/b/posts/20250601/"/>
+        <id>https://yoichihirai.com/b/posts/20250601/</id>
+        
+        <content type="html" xml:base="https://yoichihirai.com/b/posts/20250601/">&lt;p&gt;Some things choose you and you need to do them. You don&#x27;t choose to get born. Once you are born and grow up to certain extent you have choices. There are special things called opportunities that you might grab and you might not.&lt;&#x2F;p&gt;
+&lt;p&gt;I might contact interesting projects and people so that perhaps I can start working with them. I might start making products or services. I might learn new things. This post explains how I usually choose or prioritize these things. The whole thing can be summarized as picking the biggest&lt;&#x2F;p&gt;
+&lt;p&gt;$$
+p \log U &#x2F; T
+$$
+where $p$ is the probability of success, $U$ is some measure of utility, $T$ is the time it takes to try.&lt;&#x2F;p&gt;
+&lt;p&gt;The strangest thing about this expression is why $\log$? You could define $U&#x27; = \log U$ and then the expression would look more general.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;why-logarithm&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#why-logarithm&quot; aria-label=&quot;Anchor link for: why-logarithm&quot;&gt;Why logarithm&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Let&#x27;s say there&#x27;s a bet where your asset goes 50% down or 60% up with half-half probabilities (for simplicity: each try is independent). The expected change is +5%? You might think so and you keep playing and then you&#x27;ll get poorer.&lt;&#x2F;p&gt;
+&lt;p&gt;That&#x27;s because you&#x27;ll most certainly win and lose roughly half the tries. If you lose once and win once, you&#x27;ll end up worse off because $0.5 \times 1.6 = 0.8$. So usually you lose 20% each two tries.&lt;&#x2F;p&gt;
+&lt;p&gt;Here I was going to say you could look at
+$$
+\frac{1}{2}\log(0.5) + \frac{1}{2}\log(1.6) &amp;lt; 0
+$$
+and you wouldn&#x27;t take the bet, and so on. If you use this kind of thinking to size your bets it&#x27;s called &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Kelly_criterion&quot;&gt;Kelly criterion&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;But I think I haven&#x27;t really answered why logarithm. Everything that can be done after taking the logarithm can also be done with lots of multiplications and exponentiation. You could argue in different ways:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;One issue with logarithm is you don&#x27;t get $\log 0$ because no $x$ can bring you to $0 ^ x = e$ (maybe not $e$, whichever base of the logarithm you&#x27;re using). So complete ruins look like negative infinity. That&#x27;s a feature because I think it makes sense to avoid ruins in life.&lt;&#x2F;li&gt;
+&lt;li&gt;Some people say &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Weber%E2%80%93Fechner_law&quot;&gt;perception is logarithmic&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Let me say I&#x27;m better at mentally grasping $p\log U &#x2F; T$ than computing $U^{p(1&#x2F;T)}$. Especially, I don&#x27;t have a good intuition on taking $(\cdot)^{(1&#x2F;T)}$. There&#x27;s another reason. Sometimes I can guess $\log U$ but I don&#x27;t know $U$ because I don&#x27;t know the base of the logarithm!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;what-to-do-with-this&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#what-to-do-with-this&quot; aria-label=&quot;Anchor link for: what-to-do-with-this&quot;&gt;What to do with this&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;For each opportunity, potential project, something I could learn and so on, I assign&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\log U = 0$ if success wouldn&#x27;t matter&lt;&#x2F;li&gt;
+&lt;li&gt;$\log U = 1$ if success would move my life in the right direction somehow&lt;&#x2F;li&gt;
+&lt;li&gt;$\log U = 2$ if success would mean a lot&lt;&#x2F;li&gt;
+&lt;li&gt;$\log U = 3$ if success would feel wonderful&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;and so on, guessing my sense of life impact is somehow logarithmic. I don&#x27;t even know the base of the logarithm I&#x27;m taking but that&#x27;s fine.&lt;&#x2F;p&gt;
+&lt;p&gt;For each opportunity, I also guess the probability of success $p$, the time it takes to try $T$, and put those numbers in the spreadsheet and look at the best scores. One quick corollary is that the projects that take a small amount time scores much higher. Trying things with $\log U = 1$ three times is as good as trying one thing with $\log U = 3$.&lt;&#x2F;p&gt;
+&lt;p&gt;This framework is flexible. I can imagine setting $U$ as a company&#x27;s financial runway, for instance.&lt;&#x2F;p&gt;
+&lt;p&gt;And don&#x27;t forget. If there&#x27;s a possible ruin or near-ruin, add terms accordingly.&lt;&#x2F;p&gt;
+&lt;p&gt;I &lt;a href=&quot;https:&#x2F;&#x2F;x.com&#x2F;pirapira&#x2F;status&#x2F;576531958425104384&quot;&gt;posted&lt;&#x2F;a&gt; about this idea briefly in 2015.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="en">
         <title>2025-05-12</title>
         <published>2025-05-12T00:00:00+00:00</published>
